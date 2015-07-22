@@ -1,0 +1,48 @@
+URxvt.scrollstyle: plain
+URxvt.scrollBar: false
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+URxvt*iconFile:            /usr/share/icons/Numix-Circle/scalable/apps/terminal.svg
+!URxvt*iconFile: /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png
+!URxvt*iconFile: /home/ggljzr/Documents/myConfig/icons/flattr-icons/apps/64/bash.svg
+
+URxvt*font: xft:monospace:size=9
+
+xterm*scrollBar: false
+
+
+URxvt.colorUL: #4682B4
+
+
+! terminal colors ------------------------------------------------------------
+
+! tangoesque scheme
+*background: #474848
+*foreground: #f0f0f0
+! Black (not tango) + DarkGrey
+*color0:  #2d2d2d
+*color8:  #5d686a
+! DarkRed + Red
+*color1: #AC395A 
+*color9: #d1154a
+! DarkGreen + Green
+*color2:  #21AE6C
+*color10: #26D376
+! DarkYellow + Yellow
+*color3:  #F3C13F
+*color11: #F6D171
+! DarkBlue + Blue
+*color4:  #5294E2
+*color12: #45b7ff
+! DarkMagenta + Magenta
+*color5:  #A866D1
+*color13: #BB91D5
+!DarkCyan + Cyan (both not tango)
+*color6:  #5EBDB5
+*color14: #86DDCD
+! LightGrey + White
+*color7:  #98A2A4
+*color15: #f0f0f0
