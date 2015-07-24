@@ -35,5 +35,5 @@ hi NERDTreeDirSlash ctermfg=Red cterm=bold
 hi NERDTreeUp ctermfg=Yellow
 hi NERDTreeHelp ctermfg=Cyan cterm = bold
 
-hi Pmenu ctermfg=black ctermbg=green
+hi Pmenu ctermfg=Blue ctermbg=DarkRed
 hi PmenuSel ctermfg=red ctermbg=green cterm=bold

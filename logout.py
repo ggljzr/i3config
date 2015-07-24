@@ -6,6 +6,8 @@ import time
 #script for drawing simple logout menu in
 #terminal
 
+bgColor = '61878B'
+
 def initCurses():
 
 	#init curses interface
@@ -35,8 +37,10 @@ class Menu:
 		self.title = 'Logout Menu'
 		self.menuEntries = ['Log out', 'Suspend',
 				'Restart', 'Power off']
-		self.titleOffset = 2;
-		self.pointerPosition = 0;
+		self.titleOffset = 2
+		self.pointerPosition = 0
+
+		self.lock = False
 
 	def drawMenu(self):
 
@@ -44,14 +48,17 @@ class Menu:
 		self.scr.clear()
 		
 		try:
-			stdscr.addstr(rows-1,0, 'Press q to cancel')
+			self.scr.addch(rows-1,0,'Q', curses.A_BOLD)
+			self.scr.addstr(rows-1,1,'uit')
+			self.scr.addch(rows-1, 6, 'L', curses.A_BOLD)
+			self.scr.addstr(rows-1, 7, 'ock: ' + str(self.lock))
 		except curses.error:
 			pass
 		
 		try:
 			self.scr.addstr(0,
 					(self.cols - len(self.title))//2,
-					self.title)
+					self.title, curses.A_BOLD)
 		except curses.error:
 			pass
 	
@@ -78,6 +85,14 @@ class Menu:
 
 		self.scr.refresh()
 
+	def switchLock(self):
+		self.lock = not self.lock
+		if self.lock == True:
+			self.menuEntries[1] = 'Suspend (lock)'
+		else:
+			self.menuEntries[1] = 'Suspend'
+		self.drawMenu()
+
 	def moveUp(self):
 		self.pointerPosition = (self.pointerPosition - 1) % len(self.menuEntries)
 		self.drawMenu();
@@ -92,7 +107,11 @@ class Menu:
 			os.system('i3-msg exit')			#logout
 			#self.scr.addstr(0,0,str(self.pointerPosition))
 		elif self.pointerPosition == 1:
-			os.system('systemctl suspend')			#suspend
+			if self.lock:
+				os.system('i3lock -c ' + bgColor 
+					  + ' && systemctl suspend')
+			else:
+				os.system('systemctl suspend')			#suspend
 			#self.scr.addstr(0,0,str(self.pointerPosition))
 		elif self.pointerPosition == 2:
 			os.system('systemctl reboot')			#restart
@@ -118,6 +137,8 @@ if __name__ == '__main__':
 		c = stdscr.getch()
 		if c == ord('q'):
 			break
+		if c == ord('l'):
+			menu.switchLock()
 		if c == curses.KEY_UP:
 			menu.moveUp()
 		if c == curses.KEY_DOWN:

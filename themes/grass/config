@@ -36,9 +36,12 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 #gaps
-for_window [class="^.*"] border pixel 3 #disable window titlebars
-gaps inner 6
-gaps outer 3
+for_window [class="^.*"] border pixel 2 #disable window titlebars
+gaps inner 8
+gaps outer 6
+
+#run composition manager
+exec compton -b
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -157,6 +160,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 bindsym $mod+End exec systemctl suspend
+#bindsym $mod+End exec python ~/.i3/logout.py
 
 # Pulse Audio 
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
@@ -170,7 +174,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 
 #startup
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale /home/ggljzr/Pictures/1430518751272.jpg
+exec --no-startup-id feh --bg-scale /home/ggljzr/Pictures/1434212988859.jpg
 
 #focus_follows_mouse no
 
@@ -183,20 +187,21 @@ bar {
 	font pango:Monospace 11
 	
 	colors{
-		background #5C6BC0
-		statusline #FAFAFA
+		background #49A0BB
+		statusline #ffffff
 
-		focused_workspace #fafafa #388E3C
-		active_workspace #fafafa #EF5350
-		inactive_workspace #FAFAFA #474848
-		urgent_workspace #fafafa #689F38	
+		focused_workspace #ffffff #E65B64
+		active_workspace #ffffff #8BC879
+		inactive_workspace #ffffff #132C30
+		urgent_workspace #ffffff #DCA338	
 	}
 }
 
 # class                 border  backgr. text    indicator
- client.focused #EF5350 #EF5350 #FAFAFA #EF5350
- client.focused_inactive          #388E3C #388E3C #FAFAFA #388E3C
- client.unfocused         #474848 #474848 #FAFAFA #474848
- client.urgent      	 #689F38 #689F38 #FAFAFA #689F38
+ client.focused          #E65B64  #E65B64 #ffffff #E65B64 
+ client.focused_inactive #61B55A #61B55A #ffffff #61B55A 
+#client.unfocused        #f0f0f0 #f0f0f0 #2d2d2d #f0f0f0
+ client.unfocused         #132c30 #132C30 #ffffff #132C30
+ client.urgent      	 #DCA338 #DCA338 #ffffff #DCA338
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 

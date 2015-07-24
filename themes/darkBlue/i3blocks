@@ -33,7 +33,7 @@ markup=none
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-color=#EF5350
+color=#ED6B6B
 label=Memory
 separator=false
 interval=30
@@ -46,7 +46,7 @@ interval=30
 # (defaults to 10 for 10%).
 [disk]
 label=Home
-color=#9CCC65
+color=#ACED6B
 #instance=/mnt/data
 interval=30
 

@@ -20,29 +20,29 @@ URxvt.colorUL: #4682B4
 ! terminal colors ------------------------------------------------------------
 
 ! tangoesque scheme
-*background: #474848
-*foreground: #fff4e8
+*background: #132C30
+*foreground: #ffffff
 ! Black (not tango) + DarkGrey
 *color0:  #2d2d2d
-*color8:  #4C433E
+*color8:  #677884
 ! DarkRed + Red
-*color1: #955252 
-*color9: #BD6B6B 
+*color1: #B22A32
+*color9: #E65B64 
 ! DarkGreen + Green
-*color2:  #7A8A5D
-*color10: #A1B67B
+*color2:  #61B55A
+*color10: #8BC879
 ! DarkYellow + Yellow
-*color3:  #C49D4E
-*color11: #FFcc66
+*color3:  #EDBD54
+*color11: #F1CB79
 ! DarkBlue + Blue
-*color4:  #61878B
-*color12: #60B1B7
+*color4:  #49A0BB
+*color12: #6AB2C8
 ! DarkMagenta + Magenta
-*color5:  #7C5971
-*color13: #A77899
+*color5:  #6A1B9A
+*color13: #CE93D8
 !DarkCyan + Cyan (both not tango)
-*color6:  #679787
-*color14: #7CB6A3
+*color6:  #4FB3AF
+*color14: #88D3C6
 ! LightGrey + White
 *color7:  #f0f0f0
-*color15: #FFF4E8
+*color15: #ffffff
