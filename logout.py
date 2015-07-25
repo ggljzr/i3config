@@ -35,7 +35,7 @@ class Menu:
 		self.cols = cols
 	
 		self.title = 'Logout Menu'
-		self.menuEntries = ['Log out', 'Suspend',
+		self.menuEntries = ['Lock','Log out', 'Suspend',
 				'Restart', 'Power off']
 		self.titleOffset = 2
 		self.pointerPosition = 0
@@ -88,9 +88,9 @@ class Menu:
 	def switchLock(self):
 		self.lock = not self.lock
 		if self.lock == True:
-			self.menuEntries[1] = 'Suspend (lock)'
+			self.menuEntries[2] = 'Suspend (lock)'
 		else:
-			self.menuEntries[1] = 'Suspend'
+			self.menuEntries[2] = 'Suspend'
 		self.drawMenu()
 
 	def moveUp(self):
@@ -104,19 +104,21 @@ class Menu:
 	def menuExec(self):
 		
 		if self.pointerPosition == 0:
+			os.system('i3lock -c' + bgColor) #lock
+		elif self.pointerPosition == 1:
 			os.system('i3-msg exit')			#logout
 			#self.scr.addstr(0,0,str(self.pointerPosition))
-		elif self.pointerPosition == 1:
+		elif self.pointerPosition == 2:
 			if self.lock:
 				os.system('i3lock -c ' + bgColor 
 					  + ' && systemctl suspend')
 			else:
 				os.system('systemctl suspend')			#suspend
 			#self.scr.addstr(0,0,str(self.pointerPosition))
-		elif self.pointerPosition == 2:
+		elif self.pointerPosition == 3:
 			os.system('systemctl reboot')			#restart
 			#self.scr.addstr(0,0,str(self.pointerPosition))
-		elif self.pointerPosition == 3:
+		elif self.pointerPosition == 4:
 			os.system('systemctl halt')			#power off
 			#self.scr.addstr(0,0,str(self.pointerPosition))
 	
