@@ -6,7 +6,8 @@ import time
 #script for drawing simple logout menu in
 #terminal
 
-bgColor = '61878B'
+bgPath = '$HOME/Pictures/current.png' #path to image for i3lock screen
+				#must be .png
 
 def initCurses():
 
@@ -104,13 +105,13 @@ class Menu:
 	def menuExec(self):
 		
 		if self.pointerPosition == 0:
-			os.system('i3lock -c' + bgColor) #lock
+			os.system('i3lock -i' + bgPath) #lock
 		elif self.pointerPosition == 1:
 			os.system('i3-msg exit')			#logout
 			#self.scr.addstr(0,0,str(self.pointerPosition))
 		elif self.pointerPosition == 2:
 			if self.lock:
-				os.system('i3lock -c ' + bgColor 
+				os.system('i3lock -i ' + bgPath
 					  + ' && systemctl suspend')
 			else:
 				os.system('systemctl suspend')			#suspend

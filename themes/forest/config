@@ -99,7 +99,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 #kb toggle
-bindsym $mod+c exec sh ~/.i3/kbscript.sh
+bindsym $mod+c exec --no-startup-id sh ~/.i3/kbscript.sh
 
 # focus the parent container
 bindsym $mod+a focus parent

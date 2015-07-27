@@ -28,66 +28,54 @@ command=/usr/local/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-# Volume indicator
-# Memory usage
-#
-# The type defaults to "mem" if the instance is not specified.
+
+[weather]
+color=#0C9DC7
+command=exec python ~/.i3/weatherBar.py
+interval=1800
+
+
+
 [memory]
-color=#B22A32
+color=#10C1D1
 label=Memory
 separator=false
 interval=30
+markup=pango
 
-
-# Disk usage
-#
-# The directory defaults to $HOME if the instance is not specified.
-# The script may be called with a optional argument to set the alert
-# (defaults to 10 for 10%).
 [disk]
 label=Home
-color=#61B55A
+color=#83CB83
 #instance=/mnt/data
 interval=30
 
-#[load_average]
-#interval=10
-
-# Battery indicator
-#
-# The battery instance defaults to 0.
 [battery]
+color=#AD7093
 label=Battery
-#label=⚡
-#instance=1
 interval=30
 
 [brightness]
+color=#F5C87F
 interval=1
-label= Brightness
+label=Brightness
 command= printf %.0f `xbacklight -get`
 
 
-#
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
 [volume]
+color=#F96C74
 label=Volume
-#label=♪
 instance=Master
-#instance=PCM
 interval=1
 signal=10
 
 [keyboard layout]
+color=#20DDEE
 label=
 command= setxkbmap -query | awk '/layout/{print $2}'
 interval=1
 
-# Date Time
-#
 [time]
+color=#18C0F1
 command=date '+%A %B %d %H:%M'
 interval=50
 
@@ -130,3 +118,4 @@ interval=50
 #instance=NUM
 #interval=once
 #signal=11
+

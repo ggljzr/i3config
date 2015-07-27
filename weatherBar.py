@@ -10,7 +10,7 @@ rawData = response.read()
 jsonData = json.loads(rawData)
 
 #desc = jsonData['weather'][0]['main']
-temp = ' Temperature ' + str(jsonData['main']['temp']) + u' °C'
+temp = 'Temperature ' + str(jsonData['main']['temp']) + u' °C'
 hum = ' Humidity ' + str(jsonData['main']['humidity']) + ' %'
 
 sys.stdout.write(temp.encode('utf-8') + ' /' + hum)

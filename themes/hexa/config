@@ -30,25 +30,29 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# clock cursor fix
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 #gaps
-for_window [class="^.*"] border pixel 2 #disable window titlebars
+for_window [class="^.*"] border pixel 3 #disable window titlebars
 gaps inner 8
 gaps outer 6
 
 #run composition manager
-exec compton -b
+exec --no-startup-id compton -b
+
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#0b2b38" -nf "#ffffff" -sb "#83cb83" -sf "#06171e"'
 
 # change focus
 bindsym $mod+j focus left
@@ -95,7 +99,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 #kb toggle
-bindsym $mod+c exec sh ~/.i3/kbscript.sh
+bindsym $mod+c exec --no-startup-id sh ~/.i3/kbscript.sh
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -104,7 +108,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
+bindsym $mod+1 workspace 1:home
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
@@ -116,7 +120,7 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+1 move container to workspace 1:home
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
@@ -163,45 +167,72 @@ bindsym $mod+End exec systemctl suspend
 #bindsym $mod+End exec python ~/.i3/logout.py
 
 # Pulse Audio 
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
  
 bindsym XF86AudioMute exec amixer -q sset Master toggle # mute sound
 
 # # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
 
 #startup
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale /home/ggljzr/Pictures/1434212988859.jpg
+exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 
 #focus_follows_mouse no
+
+set $black #06171E
+set $darkGrey #424A4D
+set $red #F96C74
+set $darkRed #DB657F
+set $green #83CB83
+set $darkGreen #64BE65
+set $yellow #F5C87F
+set $darkYellow #F3BC65
+set $blue #18C0F1
+set $darkBlue #0C9DC7
+set $magenta #AD7093
+set $darkMagenta #9B597F
+set $cyan #20DDEE
+set $darkCyan #10C1D1
+set $white #ffffff
+set $lightGrey #f0f0f0
+
+set $background #0B2B38
+set $foreground $white
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3blocks
-	
+	strip_workspace_numbers yes	
 	position top
-	font pango:Monospace 11
-	
-	colors{
-		background #49A0BB
-		statusline #ffffff
+	font pango:Monospace 9
 
-		focused_workspace #ffffff #E65B64
-		active_workspace #ffffff #8BC879
-		inactive_workspace #ffffff #132C30
-		urgent_workspace #ffffff #DCA338	
+	separator_symbol "|"
+
+	height 25
+
+	colors{
+		separator $darkRed
+		background $background
+		statusline $white 
+
+		focused_workspace $darkGreen $darkGreen $white
+		active_workspace $darkRed $darkRed $white
+		inactive_workspace $background $background $white
+		urgent_workspace $darkMagenta $darkMagenta $white
 	}
 }
 
-# class                 border  backgr. text    indicator
- client.focused          #E65B64  #E65B64 #ffffff #E65B64 
- client.focused_inactive #61B55A #61B55A #ffffff #61B55A 
-#client.unfocused        #f0f0f0 #f0f0f0 #2d2d2d #f0f0f0
- client.unfocused         #132c30 #132C30 #ffffff #132C30
- client.urgent      	 #DCA338 #DCA338 #ffffff #DCA338
-# client.placeholder      #000000 #0c0c0c #ffffff #000000
+
+
+# class                  border      backgr.     text         indicator
+ client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
+ client.focused_inactive $darkBlue    $darkBlue    $foreground  $darkBlue
+ client.unfocused        $background $background $foreground  $background
+ client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
+#client.placeholder      #000000 #0c0c0c #ffffff #000000
 
