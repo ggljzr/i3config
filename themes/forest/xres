@@ -16,6 +16,25 @@ xterm*scrollBar: false
 
 URxvt.colorUL: #4682B4
 
+! rofi config
+rofi.font: mono 9
+
+rofi.hlfg: #fff4e8
+rofi.hlbg: #61878B
+
+rofi.fg-active: #A1B67B
+rofi.bg-active: #474848
+
+rofi.hlfg-active: #fff4e8
+rofi.hlbg-active: #7A8A5D
+
+rofi.fg-urgent: #FFCC66
+rofi.bg-urgent: #474848
+
+rofi.hlfg-urgent: #fff4e8
+rofi.hlbg-urgent: #C49D4E
+
+
 
 ! terminal colors ------------------------------------------------------------
 
