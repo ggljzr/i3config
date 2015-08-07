@@ -101,6 +101,8 @@ bindsym $mod+space focus mode_toggle
 #kb toggle
 bindsym $mod+c exec --no-startup-id sh ~/.i3/kbscript.sh
 
+bindsym $mod+Tab exec --no-startup-id rofi -show window
+
 # focus the parent container
 bindsym $mod+a focus parent
 

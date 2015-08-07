@@ -223,8 +223,8 @@ bar {
 		background $background
 		statusline $white 
 
-		focused_workspace $darkGreen $darkGreen $white
-		active_workspace $darkRed $darkRed $white
+		focused_workspace $darkRed $darkRed $white
+		active_workspace $darkBlue $darkBlue $white
 		inactive_workspace $background $background $white
 		urgent_workspace $darkMagenta $darkMagenta $white
 	}
@@ -233,9 +233,9 @@ bar {
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
+ client.focused          $darkBlue   $darkBlue   $foreground  $darkBlue
  client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
  client.unfocused        $background $background $foreground  $background
- client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
+ client.urgent      	 $darkMagenta $darkMagenta $foreground  $darkMagenta
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
 
