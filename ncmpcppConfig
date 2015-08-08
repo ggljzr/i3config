@@ -177,10 +177,11 @@ visualizer_look = ●▮
 ## Note: colors can be nested.
 ##
 #
-song_list_format = $5{%a - }{%t}|{$8%f$9}$R{$2(%l)$9}
+song_list_format = $3{%a$5 - }{%t}|{$8%f$9}$R{$2(%l)$9}
 #
 #song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
-#
+song_status_format = "$3 $3%a $2-- $5%t $2-- $2%b $3"
+
 #song_library_format = {%n - }{%t}|{%f}
 #
 #tag_editor_album_format = {(%y) }%b
@@ -274,7 +275,7 @@ song_list_format = $5{%a - }{%t}|{$8%f$9}$R{$2(%l)$9}
 ##   not available.
 ##
 #
-song_columns_list_format = (20)[]{a} (6f)[blue]{NE} (50)[blue]{t|f:Title} (20)[red]{b} (7f)[red]{l}
+song_columns_list_format = (20)[green]{a} (6f)[blue]{NE} (50)[blue]{t|f:Title} (20)[red]{b} (7f)[green]{l}
 #
 ##### various settings #####
 #
@@ -320,9 +321,11 @@ song_columns_list_format = (20)[]{a} (6f)[blue]{NE} (50)[blue]{t|f:Title} (20)[r
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-progressbar_look = ─╼
+#progressbar_look = ─╼
+progressbar_look ="▒▉▉"
+
 #
-#progressbar_boldness = yes
+progressbar_boldness = yes
 #
 ## Available values: database, playlist.
 ##
