@@ -321,8 +321,7 @@ song_columns_list_format = (20)[green]{a} (6f)[blue]{NE} (50)[blue]{t|f:Title} (
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-#progressbar_look = ─╼
-progressbar_look ="▒██"
+progressbar_look = "─╼ "
 
 #
 progressbar_boldness = yes
@@ -480,11 +479,11 @@ titles_visibility = no
 #
 #empty_tag_color = cyan
 #
-header_window_color = green
+header_window_color = red
 #
 volume_color = blue
 #
-state_line_color = green
+state_line_color = red
 #
 state_flags_color = red
 #

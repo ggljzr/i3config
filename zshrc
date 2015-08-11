@@ -14,7 +14,7 @@ compinit
 # End of lines added by compinstall
 #
 autoload -U colors && colors
-PROMPT="%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}%#>%{$reset_color%} "
+PROMPT="%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[foreground]%}%#>%{$reset_color%} "
 
 #RPROMPT='<<'
 #
