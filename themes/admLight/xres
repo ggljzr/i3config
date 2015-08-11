@@ -50,8 +50,8 @@ rofi.hlbg-urgent: #7C5971
 *color1: #955252 
 *color9: #BD6B6B 
 ! DarkGreen + Green
-*color2:  #7A8A5D
-*color10: #A1B67B
+*color2:  #73A583
+*color10: #89B396
 ! DarkYellow + Yellow
 *color3:  #C49D4E
 *color11: #FFcc66
@@ -65,5 +65,5 @@ rofi.hlbg-urgent: #7C5971
 *color6:  #679787
 *color14: #7CB6A3
 ! LightGrey + White
-*color7:  #f0f0f0
+*color7:  #D7D5D6
 *color15: #FFF4E8

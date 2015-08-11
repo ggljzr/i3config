@@ -37,7 +37,7 @@ interval=1800
 
 
 [memory]
-color=#679787
+color=#73A583
 label=Memory
 separator=false
 interval=30
@@ -45,7 +45,7 @@ markup=pango
 
 [disk]
 label=Home
-color=#A1B67B
+color=#73A583
 #instance=/mnt/data
 interval=30
 

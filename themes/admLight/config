@@ -190,8 +190,8 @@ set $black #474848
 set $darkGrey #4C433E
 set $red #BD6B6B
 set $darkRed #955252
-set $green #A1B67B
-set $darkGreen #7A8A5d
+set $green #89B396
+set $darkGreen #73A583
 set $yellow #FFCC66
 set $darkYellow #C49D4E
 set $blue #60B1B7
@@ -227,7 +227,7 @@ bar {
 		focused_workspace $darkRed $darkRed $white
 		active_workspace $darkBlue $darkBlue $white
 		inactive_workspace $background $background $black
-		urgent_workspace $darkMagenta $darkMagenta $white
+		urgent_workspace $darkGreen $darkGreen $white
 	}
 }
 

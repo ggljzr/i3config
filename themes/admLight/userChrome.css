@@ -16,7 +16,7 @@
 /*
 #identity-icon-label {
 color : #fff4e8;
-background-color : #474848;
+background-color : #D7D5D6;
 border: none !important;
 margin: 0 0 0 0 !important;
 padding : 0 0 0 0 !important;
@@ -49,10 +49,10 @@ toolbar {
     padding-top: 0px !important;
     margin-bottom: -1px !important;
     border-style: solid !important;
-    border-color: #474848 !important;
+    border-color: #D7D5D6 !important;
     border-radius: 0px !important;
-    background: #474848 !important;
-    color: #fff4e8 !important;
+    background: #D7D5D6 !important;
+    color: #474848 !important;
 }
 
 
@@ -88,7 +88,7 @@ toolbar {
  
 
 #TabsToolbar .tabs-newtab-button:hover {
-    background: #7a8a5d !important;
+    background: #73A583 !important;
     color: #fff4e8 !important;
     transition: all .4s !important;
     border: none !important;
@@ -102,7 +102,7 @@ toolbar {
 }
 
 #TabsToolbar .tab-background[selected] {
-    background: #474848 !important;
+    background: #D7D5D6 !important;
     border: none;
    
 }
@@ -136,10 +136,10 @@ toolbar {
 }
 
 #TabsToolbar .tabbrowser-tab[selected] {
-    color: #fff4e8 !important;
+    color: #474848 !important;
     border : none !important;
     border-radius : 0 !important;
-    background: #474848 !important;
+    background: #D7D5D6 !important;
     background-clip: initial !important;
     margin-bottom: 0 !important;
     border: none;
