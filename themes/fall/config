@@ -52,8 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#f0f0f0" -nf "#2d2d2d" -sb "#955252" -sf "#fff4e8"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#334B3E" -nf "#39DE99" -sb "#39DE99" -sf "#334B3E"'
 
 # change focus
 bindsym $mod+j focus left
@@ -104,9 +103,6 @@ bindsym $mod+c exec --no-startup-id sh ~/.i3/kbscript.sh
 
 #window switcher
 bindsym $mod+Tab exec --no-startup-id rofi -show window
-
-#rofi run
-bindsym $mod+Shift+Tab exec --no-startup-id rofi -show run
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -189,25 +185,25 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 
 #focus_follows_mouse no
 
-set $black #474848
+set $black #334B3E
 set $darkGrey #4C433E
-set $red #BD6B6B
-set $darkRed #955252
-set $green #89B396
-set $darkGreen #73A583
-set $yellow #FFCC66
-set $darkYellow #C49D4E
-set $blue #60B1B7
-set $darkBlue #61878B
-set $magenta #A77899
-set $darkMagenta #7C5971
-set $cyan #7CB6A3
-set $darkCyan #679787
-set $white #fff4e8
-set $lightGrey #f0f0f0
+set $red #F86963
+set $darkRed #E66660
+set $green #39DE99
+set $darkGreen #1CAA6F
+set $yellow #A9F000
+set $darkYellow #94D100
+set $blue #0AFFDE
+set $darkBlue #00D1B4
+set $magenta #DD4065
+set $darkMagenta #D92650
+set $cyan #79E6BE
+set $darkCyan #25CB8E
+set $white #74E79C
+set $lightGrey #97EDB5
 
-set $background #f0f0f0
-set $foreground $black
+set $background #334B3E
+set $foreground #39DE99
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -223,23 +219,23 @@ bar {
 	height 25
 
 	colors{
-		separator $darkRed
+		separator $foreground
 		background $background
-		statusline $black 
+		statusline $foreground 
 
-		focused_workspace $darkRed $darkRed $white
-		active_workspace $darkBlue $darkBlue $white
-		inactive_workspace $background $background $black
-		urgent_workspace $darkGreen $darkGreen $white
+		focused_workspace $green $green $black
+		active_workspace $darkRed $darkRed $foreground
+		inactive_workspace $background $background $foreground
+		urgent_workspace $darkMagenta $darkMagenta $foreground
 	}
 }
 
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $darkRed   $darkRed   $foreground  $darkRed
- client.focused_inactive $background    $background   $background  $background
+ client.focused          $green      $green     $black       $green
+ client.focused_inactive $darkGreen    $darkGreen    $foreground  $darkGreen
  client.unfocused        $background $background $foreground  $background
- client.urgent      	 $darkMagenta $darkMagenta $foreground  $darkMagenta
+ client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
 
