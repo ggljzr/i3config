@@ -36,7 +36,7 @@ class Menu:
 		self.cols = cols
 	
 		self.title = 'Logout Menu'
-		self.menuEntries = ['Lock','Log out', 'Suspend',
+		self.menuEntries = ['Lock screen','Log out', 'Suspend',
 				'Restart', 'Power off']
 		self.titleOffset = 2
 		self.pointerPosition = 0
