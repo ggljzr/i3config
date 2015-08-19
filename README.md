@@ -1,5 +1,7 @@
 # i3config
 dotfiles and scripts for i3 wm (Airblader's gaps fork (https://github.com/Airblader/i3))
 
-TODO:
-update config files for other themes than "forest"
+custom userChrome.css works best with Simple White theme (https://addons.mozilla.org/en-US/firefox/addon/simplewhite/)
+
+all themes should be up to date
+
