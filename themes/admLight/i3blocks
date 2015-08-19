@@ -38,32 +38,37 @@ interval=1800
 
 [memory]
 color=#73A583
-label=Memory
+#label=Memory
+label=  
 separator=false
 interval=30
 markup=pango
 
 [disk]
-label=Home
+#label=Home
+label= 
 color=#73A583
 #instance=/mnt/data
 interval=30
 
 [battery]
 color=#A77899
-label=Battery
+#label=Battery
+label= 
 interval=30
 
 [brightness]
 color=#C49D4E
 interval=1
-label=Brightness
+#label=Brightness
+label=  
 command= printf %.0f `xbacklight -get`
 
 
 [volume]
 color=#BD6B6B
-label=Volume
+#label=Volume
+label=  
 instance=Master
 interval=1
 signal=10
