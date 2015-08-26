@@ -28,21 +28,16 @@ command=/usr/local/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-
 [weather]
 color=#61878B
 command=exec python ~/.i3/weatherBar.py
 interval=1800
 
-
-
 [memory]
 color=#73A583
 #label=Memory
 label=  
-separator=false
 interval=30
-markup=pango
 
 [disk]
 #label=Home
@@ -63,7 +58,6 @@ interval=1
 #label=Brightness
 label=  
 command= printf %.0f `xbacklight -get`
-
 
 [volume]
 color=#BD6B6B
