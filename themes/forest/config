@@ -235,7 +235,8 @@ bar {
 
 # class                  border      backgr.     text         indicator
  client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
- client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
+# client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
+ client.focused_inactive $background $background $foreground $background
  client.unfocused        $background $background $foreground  $background
  client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
