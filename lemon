@@ -37,7 +37,7 @@ kblay(){
 }
 
 clock(){ 
-	clock=$(date "+%b %d %Y %I:%M")
+	clock=$(date "+%b %d %Y %H:%M")
   	echo $clock
 }
 
@@ -49,7 +49,7 @@ while :; do
  [[ loops -eq 0 ]] 
  loops=$(( loops + 1 ))
 
- 	echo "%{B#7A8A5D} $(ws) %{B-} %{F#BD6B6B} $(song) %{c}%{F#A1B67B} $(clock) %{F-} %{r}%{B#955252} $(battery) %{B-}%{B#7C5971} $(volume) %{B-}%{B#61878B} $(kblay) %{B-}"
+ 	echo "%{B#7A8A5D} $(ws) %{B-} %{F#BD6B6B} $(song) %{c}%{F#A1B67B} $(clock) %{F-} %{r}%{B#955252} $(battery) %{B-}%{B#7C5971} $(volume) %{B-}%{B#7A8A5D} $(kblay) %{B-}"
 
          sleep 0.5	
 		 
