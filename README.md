@@ -7,6 +7,7 @@ all themes should be up to date
 
 config files for lemonbar are based on https://github.com/ObliviousGmn/Dotfiles/tree/master/Panel
 space for lemonbar is created via empty conky window
+
 more info about i3 with lemonbar here https://www.reddit.com/r/i3wm/comments/369sr5/lemonbar_or_i3_bar_with_gaps/
 
 default lemonbar script (lemon) and bar_config uses 'forest' theme colors
