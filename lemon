@@ -7,6 +7,7 @@ ws(){
   	if [[ $ws = 0 ]]; then 
 		echo "Home"
 	else
+		(( ws = ws + 1))
 		echo $ws
 	fi
 
