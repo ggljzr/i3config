@@ -167,7 +167,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+End exec --no-starup-id systemctl suspend
+bindsym $mod+End exec --no-startup-id systemctl suspend
 #bindsym $mod+End exec python ~/.i3/logout.py
 
 # Pulse Audio 
