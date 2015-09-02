@@ -52,7 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#474848" -nf "#FFF4E8" -sb "#955252" -sf "#60B1B7"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#3F4040" -nf "#FFF4E8" -sb "#9CA68B" -sf "#2d2d2d"'
 
 # change focus
 bindsym $mod+j focus left
@@ -187,23 +187,23 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 #focus_follows_mouse no
 
 set $black #2d2d2d
-set $darkGrey #4C433E
-set $red #BD6B6B
-set $darkRed #955252
-set $green #A1B67B
-set $darkGreen #7A8A5d
-set $yellow #FFCC66
-set $darkYellow #C49D4E
-set $blue #60B1B7
-set $darkBlue #61878B
-set $magenta #A77899
-set $darkMagenta #7C5971
-set $cyan #7CB6A3
-set $darkCyan #679787
+set $darkGrey #545454
+set $red #A48484
+set $darkRed #7F686B
+set $green #9CA68B
+set $darkGreen #777D6A
+set $yellow #CABA9B
+set $darkYellow #9CBF76
+set $blue #789C9F
+set $darkBlue #6A8082
+set $magenta #978B93
+set $darkMagenta #766C7C
+set $cyan #85ADA0
+set $darkCyan #728C83
 set $white #fff4e8
 set $lightGrey #f0f0f0
 
-set $background #474848
+set $background #3F4040
 set $foreground $white
 
 

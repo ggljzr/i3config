@@ -21,16 +21,16 @@ URxvt.colorUL: #4682B4
 rofi.font: mono 9
 
 rofi.hlfg: #fff4e8
-rofi.hlbg: #61878B
+rofi.hlbg: #7F686B
 
-rofi.fg-active: #A1B67B
-rofi.bg-active: #474848
+rofi.fg-active: #9CA68B
+rofi.bg-active: #3F4040
 
 rofi.hlfg-active: #fff4e8
-rofi.hlbg-active: #7A8A5D
+rofi.hlbg-active: #777D6A
 
 rofi.fg-urgent: #FFCC66
-rofi.bg-urgent: #474848
+rofi.bg-urgent: #3F4040
 
 rofi.hlfg-urgent: #fff4e8
 rofi.hlbg-urgent: #C49D4E
@@ -40,29 +40,29 @@ rofi.hlbg-urgent: #C49D4E
 ! terminal colors ------------------------------------------------------------
 
 ! tangoesque scheme
-*background: #474848
+*background: #3F4040
 *foreground: #fff4e8
 ! Black (not tango) + DarkGrey
 *color0:  #2d2d2d
 *color8:  #545454
 ! DarkRed + Red
-*color1: #955252 
-*color9: #BD6B6B 
+*color1: #7F686B 
+*color9: #A48484 
 ! DarkGreen + Green
-*color2:  #7A8A5D
-*color10: #A1B67B
+*color2:  #777D6A
+*color10: #9CA68B
 ! DarkYellow + Yellow
-*color3:  #C49D4E
-*color11: #FFcc66
+*color3:  #9C8F76
+*color11: #CABA9B
 ! DarkBlue + Blue
-*color4:  #61878B
-*color12: #60B1B7
+*color4:  #6A8082
+*color12: #789C9F
 ! DarkMagenta + Magenta
-*color5:  #7C5971
-*color13: #A77899
+*color5:  #766C7C
+*color13: #978B93
 !DarkCyan + Cyan (both not tango)
-*color6:  #679787
-*color14: #7CB6A3
+*color6:  #728C83
+*color14: #85ADA0
 ! LightGrey + White
 *color7:  #f0f0f0
 *color15: #FFF4E8
