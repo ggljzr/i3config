@@ -1,3 +1,4 @@
+#!/usr/bin/python
 
 import curses
 import os
@@ -120,7 +121,7 @@ class Menu:
 			os.system('systemctl reboot')			#restart
 			#self.scr.addstr(0,0,str(self.pointerPosition))
 		elif self.pointerPosition == 4:
-			os.system('systemctl halt')			#power off
+			os.system('systemctl poweroff')			#power off
 			#self.scr.addstr(0,0,str(self.pointerPosition))
 	
 
