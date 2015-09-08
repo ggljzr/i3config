@@ -13,3 +13,8 @@ default lemonbar script (lemon) and bar_config uses 'forest' theme colors
 
 themes to be used with lemonbar have _lemon suffix (TODO update theme script)
 
+newtab for firefox uses zrssfeed (http://www.zazar.net/developers/jquery/zrssfeed/) to fetch news
+
+TODO: make newtab.css files for different themes to match colors, update themeScripts.sh to change
+these .css files
+
