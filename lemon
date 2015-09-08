@@ -3,7 +3,10 @@
 
 ws(){ 
 	ws=$(xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}')
-  
+ 	
+	#ws=$(i3-msg -t get_outputs | sed 's/.*"current_workspace":"\([^"]*\)".*/\1/')
+	#echo "%{F$FG}${ws}"
+
   	if [[ $ws = 0 ]]; then 
 		echo "Home"
 	else
