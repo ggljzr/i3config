@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font terminus:monospace 8
-font xft:C64 Pro Mono: 9 
+font xft:Perfect DOS VGA 437 Win: 12 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -39,8 +39,8 @@ bindsym $mod+Shift+q kill
 
 #gaps
 for_window [class="^.*"] border pixel 5 #disable window titlebars
-gaps inner 8
-gaps outer 8
+gaps inner 0
+gaps outer 0
 
 #run composition manager
 #exec --no-startup-id compton -b
@@ -53,7 +53,7 @@ gaps outer 8
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#50449C" -nf "#FFFFFF" -sb "#A14D43" -sf "#FFFFFF" -fn "-xos4-terminus-medium-r-*-*-14-*"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#0000ff" -nf "#FFFFFF" -sb "#990000" -sf "#FFFFFF" -fn "-xos4-terminus-medium-r-*-*-14-*"'
 
 # change focus
 bindsym $mod+j focus left
@@ -184,28 +184,28 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease
 #startup
 exec --no-startup-id nm-applet
 #exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
-exec --no-startup-id xsetroot -solid "#6AC1C8"
+exec --no-startup-id xsetroot -solid "#000000"
 
 #focus_follows_mouse no
 
 set $black #000000
-set $darkGrey #636363
-set $red #CC7F76
-set $darkRed #A14D43
-set $green #98E39D
-set $darkGreen #5CAD5F
-set $yellow #CBD689
-set $darkYellow #ACBD42
-set $blue #8A7FCD
-set $darkBlue #70A4B2
-set $magenta #C797CB
-set $darkMagenta #A257A5
-set $cyan #93D2D7
-set $darkCyan #6AC1C8
+set $darkGrey #999999
+set $red #ff0000
+set $darkRed #990000
+set $green #00ff00
+set $darkGreen #009900
+set $yellow #ffff00
+set $darkYellow #999900
+set $blue #0000ff
+set $darkBlue #000099
+set $magenta #ff00ff
+set $darkMagenta #990099
+set $cyan #00ffff
+set $darkCyan #009999
 set $white #ffffff
-set $lightGrey #AFAFAF
+set $lightGrey #cccccc
 
-set $background #50449C
+set $background #000099
 set $foreground $white
 
 
@@ -217,7 +217,7 @@ bar {
 	position top
 	#font -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 	#font pango:Monospace 9
-        font xft:C64 Pro Mono 9
+        font xft:Perfect DOS VGA 437 Win 12
 	
 	separator_symbol "|"
 
@@ -238,10 +238,10 @@ bar {
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $red  $red  $foreground  $red
+ client.focused          $darkRed  $darkRed  $foreground  $darkRed
 # client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
- client.focused_inactive $darkBlue $darkBlue $foreground $darkBlue
- client.unfocused        $darkBlue $darkBlue $foreground  $darkBlue
+ client.focused_inactive $darkGrey $darkGrey $foreground $darkGrey
+ client.unfocused        $darkGrey $darkGrey $foreground  $darkGrey
  client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
 
