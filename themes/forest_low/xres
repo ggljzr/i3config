@@ -18,7 +18,7 @@ xterm*scrollBar: false
 URxvt.colorUL: #4682B4
 
 ! rofi config
-rofi.font: mono 9
+rofi.font: terminus 9
 
 rofi.hlfg: #fff4e8
 rofi.hlbg: #7F686B
