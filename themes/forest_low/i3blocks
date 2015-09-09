@@ -30,7 +30,7 @@ markup=none
 
 
 [weather]
-color=#6A8082
+color=#789C9F
 command=exec python ~/.i3/weatherBar.py
 interval=1800
 
@@ -79,7 +79,7 @@ command= setxkbmap -query | awk '/layout/{print $2}'
 interval=1
 
 [time]
-color=#789C9F
+color=#fff4e8
 command=date '+%A %B %d %H:%M'
 interval=50
 
