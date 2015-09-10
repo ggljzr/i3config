@@ -29,7 +29,7 @@ hi TabLine ctermbg=None ctermfg=white cterm=bold
 hi TabLineFill ctermfg=grey cterm=bold
 
 hi Title ctermfg=red
-hi CursorLine ctermbg=red ctermfg=blue cterm=bold
+hi CursorLine ctermbg=darkRed ctermfg=green cterm=bold
 hi NERDTreeDir ctermfg=Green
 hi NERDTreeDirSlash ctermfg=Red cterm=bold
 hi NERDTreeUp ctermfg=Yellow
@@ -37,3 +37,14 @@ hi NERDTreeHelp ctermfg=Cyan cterm = bold
 
 hi Pmenu ctermfg=white ctermbg=DarkRed
 hi PmenuSel ctermfg=black ctermbg=green cterm=bold
+
+hi Question ctermfg=red
+hi ModeMsg ctermfg=red
+hi MoreMsg ctermfg=red
+hi Underlined cterm=underline ctermfg=cyan
+
+hi Directory ctermfg=green
+
+hi StartifyHeader ctermfg=green
+hi StarfiyPath ctermfg=green
+hi StartifySlash ctermfg=red cterm=bold
