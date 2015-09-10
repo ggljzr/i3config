@@ -6,5 +6,6 @@ cat $1/i3blocks > ~/.i3blocks.conf
 cat $1/userChrome.css > "/home/ggljzr/.mozilla/firefox/az8dnp0b.default-1441248752478/chrome/userChrome.css" 
 cat $1/redmond > ~/.vim/colors/redmond.vim
 cat $1/ncmpcppConfig > ~/.ncmpcpp/config
+cat $1/newtab.css > ~/Documents/ffConfig/newtab/newtab.css
 
 xrdb -load ~/.Xresources

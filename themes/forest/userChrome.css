@@ -1,3 +1,4 @@
+
 #main-window:not([chromehidden*="toolbar"])[sizemode="normal"]
 {
  margin-top: -2px!important;
@@ -118,7 +119,7 @@ toolbar {
      border: none !important;
      border-radius: 0 !important;
      /*background : none !important*/
-     background-color: #474848 !important;
+     background-color: #3F4040 !important;
     -moz-border-top-colors: none !important;
     -moz-border-left-colors: none !important;
     -moz-border-right-colors: none !important;
