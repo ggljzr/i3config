@@ -38,4 +38,18 @@ hi NERDTreeHelp ctermfg=Cyan cterm = bold
 hi Pmenu ctermfg=white ctermbg=DarkRed
 hi PmenuSel ctermfg=white ctermbg=darkBlue cterm=bold
 
+hi Question ctermfg=red
+hi ModeMsg ctermfg=red
+hi MoreMsg ctermfg=red
+hi Underlined cterm=underline ctermfg=cyan
+
+hi Directory ctermfg=darkRed
+
+hi StartifyHeader ctermfg=darkRed
+hi StarfiyPath ctermfg=green
+hi StartifySlash ctermfg=blue cterm=bold
+hi StartifySpecial ctermfg=darkred
+hi StartifyFile ctermfg=blue cterm=bold
+hi StartifyBracket ctermfg=green cterm=bold
+hi StartifyNumber ctermfg=darkgreen
 

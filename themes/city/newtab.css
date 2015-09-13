@@ -1,5 +1,5 @@
 body {
-	background-color: #D7D5D6;
+	background-color: #44606E;
 	margin: 0px;
 	overflopaw: hidden;
 	font-family: Terminus;
@@ -9,6 +9,7 @@ a {
 	outline: none;
 
 }
+
 #menu {
 	background-color: none;
 	padding: 30px 0px 30px 0px;
@@ -17,20 +18,20 @@ a {
 #menu a {
 	font-family: Terminus;
 	font-size: 14px;
-	color: #474848;
+	color: #fff4e8;
 	text-decoration: none;
 	padding: 5px; 
 }
 #menu a:hover {
 	color: #FFF4E8;
-	background-color: #955252;
+	background-color: #4C9A9F;
 }
 #bgddg {
 	margin-left: 15px;
 	width: 530px;
 	height: 34px;
 	border: none;;
-	background-color: #955252;
+	background-color: #6F9782;
 }
 #formddg {
 	width: 430px;
@@ -45,7 +46,7 @@ a {
 #btngo {
 	border: 0px;
 	border-radius: 0px;
-	background-color: #7A8A5D;
+	background-color: #4C9A9F;
 	width: 45px;
 	height: 34px;
 	font-size: 16px;
@@ -59,12 +60,13 @@ a {
 }
 
 #btngo:hover {
-	background-color: #A1B67B; 
+	color: #2d2d2d;
+	background-color: #9ECED1; 
 }
 
 #rssbutton
 {
-	background-color: #955252;
+	background-color: #4C9A9F;
 	color : #fff4e8;
 	padding:3px;
 	border: none;
@@ -73,8 +75,8 @@ a {
 
 #rssbutton:hover
 {
-	background-color: #BD6B6B; 
-
+	color: #2d2d2d;
+	background-color: #9ECED1; 
 }
 
 .rssFeed
@@ -84,13 +86,13 @@ a {
 
 .rssFeed a 
 {
-	color: #474848;
+	color: #fff4e8;
 }
 
 .rssRow div 
 {
-	color: #474848;
+	color: #fff4e8;
 }
 
-.odd {background-color: #999999; }
-.even {background-color: #D7D5D6;}
+.odd {background-color: #2B3D46; }
+.even {background-color: #44606E;}
