@@ -61,7 +61,7 @@ if response is None and localResponse is None:
 	sys.stdout.write('No connection')
 	sys.exit()
 
-sys.stdout.write('Temperature ' + temp + ' (' + tempLocal + ') C / Humidity ' + hum + 
+sys.stdout.write('Temperature ' + temp + ' (' + tempLocal + ') °C / Humidity ' + hum + 
 		 ' (' + humLocal + ') %')
 
 
