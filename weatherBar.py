@@ -8,7 +8,7 @@ import sys
 import urllib2
 import json
 
-piFlaskPort = '192.168.0.105:5000'
+piFlaskPort = 'raspberrypi.local:5000'
 
 response = None
 localResponse = None
