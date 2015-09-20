@@ -4,6 +4,7 @@
 #gets data from openweathermap and from local raspberry pi with dht11 sensor
 #requires pango markup in weather widget
 import sys
+import os
 
 import urllib2
 import json
@@ -13,7 +14,14 @@ piFlaskPort = 'raspberrypi.local:5000'
 response = None
 localResponse = None
 
-localDataColor = '"#C36661"'
+#localDataColor = '"#C36661"'
+#gets red color from .Xresources, not very nice
+localDataColor = '"' + os.popen("cat ~/.Xresources | grep color9  | awk -F': ' '{print $2}'", 'r').read()[:-1] + '"'
+
+if localDataColor == '""':
+	localDataColor = '"#C36661"'
+
+#requires pango markup in i3blocks
 markup = 'foreground = ' + localDataColor
 
 temp = '-'

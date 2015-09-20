@@ -33,8 +33,7 @@ markup=none
 color=#789C9F
 command=exec python ~/.i3/weatherBar.py
 interval=1800
-
-
+markup=pango
 
 [memory]
 color=#728C83

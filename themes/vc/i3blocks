@@ -1,4 +1,4 @@
-#i3blocks config file
+# i3blocks config file
 #
 # Please see man i3blocks for a complete reference!
 # The man page is also hosted at http://vivien.github.io/i3blocks
@@ -28,40 +28,43 @@ command=/usr/local/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+
 [weather]
-color=#61878B
+color=#7AA7EB
 command=exec python ~/.i3/weatherBar.py
 interval=1800
 markup=pango
 
 [memory]
-color=#73A583
+color=#1BEBA6
 label=Memory
 #label=  
+separator=false
 interval=30
 
 [disk]
 label=Home
+color=#1BEBA6
 #label= 
-color=#73A583
 #instance=/mnt/data
 interval=30
 
 [battery]
-color=#A77899
+color=#7AD1D0
 label=Battery
 #label= 
 interval=30
 
 [brightness]
-color=#C49D4E
+color=#F5DA26B
 interval=1
 label=Brightness
 #label=  
 command= printf %.0f `xbacklight -get`
 
+
 [volume]
-color=#BD6B6B
+color=#E6517A
 label=Volume
 #label=  
 instance=Master
@@ -69,13 +72,13 @@ interval=1
 signal=10
 
 [keyboard layout]
-color=#60B1B7
+color=#E779D1
 label=
 command= setxkbmap -query | awk '/layout/{print $2}'
 interval=1
 
 [time]
-color=#955252
+color=#C6BDEA
 command=date '+%A %B %d %H:%M'
 interval=50
 

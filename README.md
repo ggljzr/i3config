@@ -17,5 +17,6 @@ newtab for firefox uses zrssfeed (http://www.zazar.net/developers/jquery/zrssfee
 and is based on https://github.com/pyonium/dotfiles/blob/master/.firefox/newtab.html
 
 TODO: make newtab.css files for different themes to match colors, update themeScripts.sh to change
-these .css files, update Startify color config in vim color scheme for other themes
+these .css files, update Startify color config in vim color scheme for other themes, add pango markup
+support for weather widget to all themes
 

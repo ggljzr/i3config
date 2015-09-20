@@ -218,8 +218,8 @@ bar {
         status_command i3blocks
 	strip_workspace_numbers yes	
 	position top
-	#font pango:Monospace 9
-	font -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+	font pango:Terminus 12
+	#font -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 
 	separator_symbol "|"
 

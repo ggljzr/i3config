@@ -52,7 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#3F4040" -nf "#FFF4E8" -sb "#7A8A5D" -sf "#fff4e8"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#223555" -nf "#EBE8F8" -sb "#EBE8F8" -sf "#223555"'
 
 # change focus
 bindsym $mod+j focus left
@@ -186,24 +186,24 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 
 #focus_follows_mouse no
 
-set $black #2d2d2d
-set $darkGrey #4C433E
-set $red #BD6B6B
-set $darkRed #955252
-set $green #A1B67B
-set $darkGreen #7A8A5d
-set $yellow #FFCC66
-set $darkYellow #C49D4E
-set $blue #60B1B7
-set $darkBlue #61878B
-set $magenta #A77899
-set $darkMagenta #7C5971
-set $cyan #7CB6A3
-set $darkCyan #679787
-set $white #fff4e8
-set $lightGrey #f0f0f0
+set $black #223555
+set $darkGrey #2C4269
+set $red #E6517A
+set $darkRed #D52A5A
+set $green #1BEBA6
+set $darkGreen #0D9668
+set $yellow #F5D26B
+set $darkYellow #EAB310
+set $blue #7AA7EB
+set $darkBlue #597AAD
+set $magenta #E779D1
+set $darkMagenta #B52097
+set $cyan #7AD1D0
+set $darkCyan #3BABA9
+set $white #EBE8F8
+set $lightGrey #C6BDEA
 
-set $background #3F4040
+set $background #223555
 set $foreground $white
 
 
@@ -235,10 +235,10 @@ bar {
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
+ client.focused          $blue  $blue  $foreground  $blue
 # client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
  client.focused_inactive $background $background $foreground $background
  client.unfocused        $background $background $foreground  $background
- client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
+ client.urgent      	 $magenta $magenta $foreground  $magenta
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
 
