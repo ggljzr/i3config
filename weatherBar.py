@@ -16,7 +16,7 @@ localResponse = None
 
 #localDataColor = '"#C36661"'
 #gets red color from .Xresources, not very nice
-localDataColor = '"' + os.popen("cat ~/.Xresources | grep color9  | awk -F': ' '{print $2}'", 'r').read()[:-1] + '"'
+localDataColor = '"' + os.popen("cat ~/.Xresources | grep color9  | awk -F': ' '{print $2}'", 'r').read().strip() + '"'
 
 if localDataColor == '""':
 	localDataColor = '"#C36661"'
