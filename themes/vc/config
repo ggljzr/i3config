@@ -187,7 +187,7 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 #focus_follows_mouse no
 
 set $black #223555
-set $darkGrey #2C4269
+set $darkGrey #354F7E
 set $red #E6517A
 set $darkRed #D52A5A
 set $green #1BEBA6
