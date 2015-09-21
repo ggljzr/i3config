@@ -4,20 +4,26 @@
 #gets data from openweathermap and from local raspberry pi with dht11 sensor
 #requires pango markup in weather widget
 import sys
-import os
+import subprocess
 
 import urllib2
 import json
 
 piFlaskPort = 'raspberrypi.local:5000'
+xresLoc = '/home/ggljzr/.Xresources'
 
 response = None
 localResponse = None
 
 #localDataColor = '"#C36661"'
-#gets red color from .Xresources, not very nice
-localDataColor = '"' + os.popen("cat ~/.Xresources | grep color9  | awk -F': ' '{print $2}'", 'r').read().strip() + '"'
+#gets red color from .Xresources, not very nice, only simple error handling
 
+procCat = subprocess.Popen(["cat", xresLoc], stdout=subprocess.PIPE)
+procGrep = subprocess.Popen(["grep", "color9"], stdin=procCat.stdout, stdout=subprocess.PIPE)
+procCat.stdout.close()
+
+#get color (last 7 chars) after striping whitespaces
+localDataColor = '"' +procGrep.communicate()[0].strip()[-7:] + '"' 
 if localDataColor == '""':
 	localDataColor = '"#C36661"'
 
