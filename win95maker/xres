@@ -19,7 +19,8 @@ xterm*scrollBar: false
 URxvt.colorUL: #4682B4
 
 ! rofi config
-rofi.font: Perfect DOS VGA 437 Win 12
+! rofi.font: Perfect DOS VGA 437 Win 12
+rofi.font: xft:terminus:size=10
 
 rofi.hlfg: #ffffff
 rofi.hlbg: #000099
@@ -56,8 +57,8 @@ rofi.hlbg-urgent: #999900
 *color3:  #999900
 *color11: #ffff00
 ! DarkBlue + Blue
-*color4:  #000099
-*color12: #0000ff
+*color4:  #428CFF
+*color12: #0A6AFF
 ! DarkMagenta + Magenta
 *color5:  #990099
 *color13: #ff00ff
