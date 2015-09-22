@@ -22,6 +22,7 @@ killall wmCalClock
 killall wmnd
 killall wmacpi
 killall compton
+killall conky
 
 wmCalClock &
 wmsystemtray &
