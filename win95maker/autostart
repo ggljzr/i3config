@@ -29,4 +29,5 @@ wmnd &
 wmacpi&
 nm-applet &
 compton -b &
+conky &
 
