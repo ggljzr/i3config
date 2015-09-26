@@ -102,7 +102,7 @@ toolbar {
 }
 
 #TabsToolbar .tab-background[selected] {
-    background: #545454 !important;
+    background: #575757 !important;
     border: none;
    
 }
