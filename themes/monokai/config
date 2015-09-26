@@ -52,7 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#223555" -nf "#EBE8F8" -sb "#EBE8F8" -sf "#223555"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#272822" -nf "#f8f8f2" -sb "#139EB9" -sf "#272822"'
 
 # change focus
 bindsym $mod+j focus left
@@ -186,24 +186,24 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 
 #focus_follows_mouse no
 
-set $black #223555
-set $darkGrey #354F7E
-set $red #E6517A
-set $darkRed #D52A5A
-set $green #1BEBA6
-set $darkGreen #0D9668
-set $yellow #F5D26B
-set $darkYellow #EAB310
-set $blue #7AA7EB
-set $darkBlue #597AAD
-set $magenta #E779D1
-set $darkMagenta #B52097
-set $cyan #7AD1D0
-set $darkCyan #3BABA9
-set $white #EBE8F8
-set $lightGrey #C6BDEA
+set $black #272822
+set $darkGrey #575757
+set $red #F92672
+set $darkRed #B30544
+set $green #A6E22E
+set $darkGreen #709D16
+set $yellow #E6DB74
+set $darkYellow #CFBF25
+set $blue #66D9EF
+set $darkBlue #139EB9
+set $magenta #AE81FF
+set $darkMagenta #792EFF
+set $cyan #66EFD2
+set $darkCyan #16D08
+set $white #f8f8f2
+set $lightGrey #75715E
 
-set $background #223555
+set $background #272822
 set $foreground $white
 
 
@@ -225,7 +225,7 @@ bar {
 		background $background
 		statusline $white 
 
-		focused_workspace $darkGreen $darkGreen $white
+		focused_workspace $darkBlue $darkBlue $white
 		active_workspace $darkRed $darkRed $white
 		inactive_workspace $background $background $white
 		urgent_workspace $darkMagenta $darkMagenta $white
@@ -235,10 +235,10 @@ bar {
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $blue  $blue  $foreground  $blue
+ client.focused          $darkRed  $darkRed  $foreground  $darkRed
 # client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
  client.focused_inactive $background $background $foreground $background
  client.unfocused        $background $background $foreground  $background
- client.urgent      	 $magenta $magenta $foreground  $magenta
+ client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
 

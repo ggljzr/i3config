@@ -20,49 +20,49 @@ URxvt.colorUL: #4682B4
 ! rofi config
 rofi.font: terminus 9
 
-rofi.hlfg: #223555
-rofi.hlbg: #EBE8F8
+rofi.hlfg: #f8f8f2
+rofi.hlbg: #139EB9
 
-rofi.fg-active: #E6517A
-rofi.bg-active: #223555
+rofi.fg-active: #F92672
+rofi.bg-active: #3F4040
 
-rofi.hlfg-active: #EBE8F8
-rofi.hlbg-active: #D52A5A
+rofi.hlfg-active: #f8f8f2
+rofi.hlbg-active: #B30544
 
-rofi.fg-urgent: #E779D1
-rofi.bg-urgent: #223555
+rofi.fg-urgent: #E6DB74
+rofi.bg-urgent: #3F4040
 
-rofi.hlfg-urgent: #EBE8F8
-rofi.hlbg-urgent: #B52097
+rofi.hlfg-urgent: #f8f8f2
+rofi.hlbg-urgent: #CFBF25
 
 
 
 ! terminal colors ------------------------------------------------------------
 
 ! tangoesque scheme
-*background: #223555
-*foreground: #EBE8F8
+*background: #272822
+*foreground: #f8f8f2
 ! Black (not tango) + DarkGrey
-*color0:  #223555
-*color8:  #354F7E
+*color0:  #272822
+*color8:  #575757
 ! DarkRed + Red
-*color1: #D52A5A
-*color9: #E6517A
+*color1: #B30544
+*color9: #F92672 
 ! DarkGreen + Green
-*color2:  #0D9668
-*color10: #1BEBA6
+*color2:  #709D16
+*color10: #A6E22E
 ! DarkYellow + Yellow
-*color3:  #EAB310
-*color11: #F5D26B
+*color3:  #CFBF25
+*color11: #E6DB74
 ! DarkBlue + Blue
-*color4:  #597AAD
-*color12: #7AA7EB
+*color4:  #139EB9
+*color12: #66D9EF
 ! DarkMagenta + Magenta
-*color5:  #B52097
-*color13: #E779D1
+*color5:  #792EFF
+*color13: #AE81FF
 !DarkCyan + Cyan (both not tango)
-*color6:  #3BABA9
-*color14: #7AD1D0
+*color6:  #16D0A8
+*color14: #66EFD2
 ! LightGrey + White
-*color7:  #C6BDEA
-*color15: #EBE8F8
+*color7:  #75715E
+*color15: #f8f8f2

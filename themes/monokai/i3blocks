@@ -30,13 +30,13 @@ markup=none
 
 
 [weather]
-color=#7AA7EB
+color=#66D9EF
 command=exec python ~/.i3/weatherBar.py
 interval=1800
 markup=pango
 
 [memory]
-color=#1BEBA6
+color=#A6E22E
 label=Memory
 #label=  
 separator=false
@@ -44,19 +44,19 @@ interval=30
 
 [disk]
 label=Home
-color=#1BEBA6
+color=#A6E22E
 #label= 
 #instance=/mnt/data
 interval=30
 
 [battery]
-color=#7AD1D0
+color=#AE81EF
 label=Battery
 #label= 
 interval=30
 
 [brightness]
-color=#F5DA26B
+color=#E6DB74
 interval=1
 label=Brightness
 #label=  
@@ -64,7 +64,7 @@ command= printf %.0f `xbacklight -get`
 
 
 [volume]
-color=#E6517A
+color=#F92672
 label=Volume
 #label=  
 instance=Master
@@ -72,13 +72,13 @@ interval=1
 signal=10
 
 [keyboard layout]
-color=#E779D1
+color=#66EFD2
 label=
 command= setxkbmap -query | awk '/layout/{print $2}'
 interval=1
 
 [time]
-color=#C6BDEA
+color=#f8f8f2
 command=date '+%A %B %d %H:%M'
 interval=50
 

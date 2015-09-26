@@ -480,11 +480,11 @@ titles_visibility = no
 #
 #empty_tag_color = cyan
 #
-header_window_color = blue
+header_window_color = green
 #
 volume_color = blue
 #
-state_line_color = blue
+state_line_color = green
 #
 state_flags_color = red
 #
@@ -500,7 +500,7 @@ main_window_highlight_color = blue
 #
 progressbar_elapsed_color = red
 #
-statusbar_color = blue
+statusbar_color = green
 #
 #alternative_ui_separator_color = black
 #
