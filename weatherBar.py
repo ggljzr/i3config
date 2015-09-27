@@ -15,6 +15,12 @@ xresLoc = '/home/ggljzr/.Xresources'
 response = None
 localResponse = None
 
+#show help :-D
+if '-h' in sys.argv or '--help' in sys.argv:
+	print 'use -s or --short for shortened output'
+	print 'use -i or --icons for icons in output instead of text'
+	sys.exit()
+
 #localDataColor = '"#C36661"'
 #gets red color from .Xresources, not very nice, only simple error handling
 
@@ -35,6 +41,9 @@ tempLocal = '<span '+ markup + ' >-</span>'
 hum =  '-'
 humLocal = '<span '+ markup + ' >-</span>'
 
+#printout format
+tempPrint = 'Temperature '
+humPrint = 'Humidity '
 
 #get openweathermap data
 try:
@@ -75,7 +84,17 @@ if response is None and localResponse is None:
 	sys.stdout.write('No connection')
 	sys.exit()
 
-sys.stdout.write('Temperature ' + temp + ' (' + tempLocal + ') °C / Humidity ' + hum + 
+#shortened printout option
+
+
+if '-s' in sys.argv or '--short' in sys.argv:
+	tempPrint = 'Tmp '
+	humPrint = 'Hum '
+if '-i' in sys.argv or '--icon' in sys.argv:
+	tempPrint = ' '
+	humPrint = ' '
+
+sys.stdout.write(tempPrint + temp + ' (' + tempLocal + ') °C / ' + humPrint + hum + 
 		 ' (' + humLocal + ') %')
 
 

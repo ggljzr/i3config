@@ -28,17 +28,22 @@ command=/usr/local/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[music]
+color=#B30544
+command=exec mpc current
+interval=5
 
 [weather]
 color=#66D9EF
-command=exec python ~/.i3/weatherBar.py
+command=exec python ~/.i3/weatherBar.py -s
 interval=1800
 markup=pango
 
 [memory]
 color=#A6E22E
-label=Memory
+#label=Memory
 #label=  
+label=Mem
 separator=false
 interval=30
 
@@ -51,23 +56,25 @@ interval=30
 
 [battery]
 color=#AE81EF
-label=Battery
+label=Batt
 #label= 
 interval=30
 
 [brightness]
 color=#E6DB74
 interval=1
-label=Brightness
+#label=Brightness
+label=Shine
 #label=  
 command= printf %.0f `xbacklight -get`
 
 
 [volume]
 color=#F92672
-label=Volume
+#label=Volume
+label=Vol
 #label=  
-instance=Master
+#instance=Master
 interval=1
 signal=10
 
@@ -79,7 +86,7 @@ interval=1
 
 [time]
 color=#f8f8f2
-command=date '+%A %B %d %H:%M'
+command=date '+%a %b %d %H:%M'
 interval=50
 
 # Generic media player support
@@ -119,6 +126,6 @@ interval=50
 
 #[keyindicator]
 #instance=NUM
-#interval=once
+#interval=1
 #signal=11
 
