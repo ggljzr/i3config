@@ -7,5 +7,6 @@ cat $1/userChrome.css > "/home/ggljzr/.mozilla/firefox/az8dnp0b.default-14412487
 cat $1/redmond > ~/.vim/colors/redmond.vim
 cat $1/ncmpcppConfig > ~/.ncmpcpp/config
 cat $1/newtab.css > ~/Documents/ffConfig/newtab/newtab.css
+cat $1/redmond.vimp > ~/.vimperator/colors/redmond.vimp
 
 xrdb -load ~/.Xresources
