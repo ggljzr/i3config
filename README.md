@@ -16,6 +16,8 @@ themes to be used with lemonbar have _lemon suffix (TODO update theme script)
 newtab for firefox uses zrssfeed (http://www.zazar.net/developers/jquery/zrssfeed/) to fetch news 
 and is based on https://github.com/pyonium/dotfiles/blob/master/.firefox/newtab.html
 
+So apparently openweathermap api now requires key to access it, so you need to register on www.openweathermap.org to get free api key.
+
 TODO: make newtab.css files for different themes to match colors, update themeScripts.sh to change
 these .css files, update Startify color config in vim color scheme for other themes, add pango markup
 support for weather widget to all themes, add colorschemes for vimperator
