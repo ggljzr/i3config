@@ -12,6 +12,7 @@ import json
 piFlaskPort = 'raspberrypi.local:5000'
 xresLoc = '/home/ggljzr/.Xresources'
 location = 'Prague'
+apiKey = "your_api_key" #you need to register on www.openweathermap.org to get api key
 
 response = None
 localResponse = None
@@ -48,7 +49,10 @@ humPrint = 'Humidity '
 
 #get openweathermap data
 try:
-	response = urllib2.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + location +'&units=metric')
+	response = urllib2.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' 
+			+ location +
+			'&units=metric&APPID=' 
+			+ apiKey )
 except urllib2.URLError:
 	pass
 else:
