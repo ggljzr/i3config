@@ -20,9 +20,9 @@ hi LineNr ctermfg=Green ctermbg=None
 hi Type ctermfg=green cterm=bold
 hi Preproc ctermfg=magenta cterm=bold
 
-hi VertSplit ctermfg=blue ctermbg=blue cterm=bold 
+hi VertSplit ctermfg=green ctermbg=green cterm=bold 
 hi StatusLine ctermfg=green ctermbg=black
-hi StatusLineNC ctermfg=blue ctermbg=black
+hi StatusLineNC ctermfg=darkblue ctermbg=white
 
 hi TabLineSel ctermbg=green ctermfg=black cterm=bold
 hi TabLine ctermbg=None ctermfg=white cterm=bold
