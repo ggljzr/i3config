@@ -8,7 +8,7 @@ endif
 let g:colors_name = 'redmond'
 
 hi Normal ctermfg=white ctermbg=None
-hi Comment ctermfg=2 ctermbg=None
+hi Comment ctermfg=darkgrey ctermbg=None
 hi Constant ctermfg=Cyan ctermbg=None 
 hi Operator ctermfg=Blue ctermbg=None
 hi Statement ctermfg=Blue ctermbg=None cterm=bold

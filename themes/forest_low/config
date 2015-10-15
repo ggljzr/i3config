@@ -52,7 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#3F4040" -nf "#FFF4E8" -sb "#9CA68B" -sf "#2d2d2d"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#333333" -nf "#FFF4E8" -sb "#9CA68B" -sf "#2d2d2d"'
 
 # change focus
 bindsym $mod+j focus left
@@ -203,7 +203,7 @@ set $darkCyan #728C83
 set $white #fff4e8
 set $lightGrey #f0f0f0
 
-set $background #3F4040
+set $background #333333
 set $foreground $white
 
 
