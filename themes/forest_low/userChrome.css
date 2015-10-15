@@ -1,9 +1,9 @@
 #main-window:not([chromehidden*="toolbar"])[sizemode="normal"]
 {
  margin-top: -2px!important;
- margin-left: -5px !important;
- margin-right: -5px!important;
- margin-bottom: -5px !important;
+ margin-left: 0px !important;
+ margin-right: 0px!important;
+ margin-bottom: 0px !important;
  
 }
 
