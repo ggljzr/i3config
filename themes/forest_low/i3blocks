@@ -28,16 +28,20 @@ command=/usr/local/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[music]
+color=#9C8F76
+command=exec mpc current
+interval=5
 
 [weather]
 color=#789C9F
-command=exec python ~/.i3/weatherBar.py
+command=exec python ~/.i3/weatherBar.py -s
 interval=1800
 markup=pango
 
 [memory]
 color=#728C83
-label=Memory
+label=Mem
 #label=  
 separator=false
 interval=30
@@ -51,21 +55,20 @@ interval=30
 
 [battery]
 color=#978B93
-label=Battery
+label=Batt
 #label= 
 interval=30
 
 [brightness]
 color=#CABA9B
 interval=1
-label=Brightness
+label=Shine
 #label=  
 command= printf %.0f `xbacklight -get`
 
-
 [volume]
 color=#A48484
-label=Volume
+label=Vol
 #label=  
 instance=Master
 interval=1
