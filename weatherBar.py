@@ -12,7 +12,7 @@ import json
 piFlaskPort = 'raspberrypi.local:5000'
 xresLoc = '/home/ggljzr/.Xresources'
 location = 'Prague'
-apiKey = "your_api_key" #you need to register on www.openweathermap.org to get api key
+apiKey = "c59469dd4ae25cd8f1fd8602fc296718" #you need to register on www.openweathermap.org to get api key
 
 response = None
 localResponse = None
@@ -60,12 +60,10 @@ else:
 	jsonData = json.loads(rawData)
 	
 	try:
-		main = jsonData['main']
+		temp = str(jsonData['main']['temp'])
+		hum = str(jsonData['main']['humidity'])
 	except KeyError:
 		pass
-	else:
-		temp = str(main['temp'])
-		hum = str(main['humidity'])
 
 #get local data
 try:
