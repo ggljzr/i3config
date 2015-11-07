@@ -1,0 +1,68 @@
+URxvt.scrollstyle: plain
+URxvt.scrollBar: false
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+URxvt*iconFile:            /usr/share/icons/Numix-Circle/scalable/apps/terminal.svg
+!URxvt*iconFile: /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png
+!URxvt*iconFile: /home/ggljzr/Documents/myConfig/icons/flattr-icons/apps/64/bash.svg
+
+URxvt*font: xft:terminus:size=13
+!URxvt*font: xft:monospace:size=9
+
+xterm*scrollBar: false
+
+
+URxvt.colorUL: #4682B4
+
+! rofi config
+rofi.font: terminus 9
+
+rofi.hlfg: #fff4e8
+rofi.hlbg: #7F686B
+
+rofi.fg-active: #9CA68B
+rofi.bg-active: #333333
+
+rofi.hlfg-active: #fff4e8
+rofi.hlbg-active: #777D6A
+
+rofi.fg-urgent: #FFCC66
+rofi.bg-urgent: #333333
+
+rofi.hlfg-urgent: #fff4e8
+rofi.hlbg-urgent: #C49D4E
+
+
+
+! terminal colors ------------------------------------------------------------
+
+! tangoesque scheme
+*background: #9A9692
+*foreground: #2d2d2d
+! Black (not tango) + DarkGrey
+*color0:  #2d2d2d
+*color8:  #999999
+! DarkRed + Red
+*color1: #6F332F
+*color9: #813B37
+! DarkGreen + Green
+*color2:  #3F6E4E
+*color10: #457855
+! DarkYellow + Yellow
+*color3:  #7E5025
+*color11: #965F2C
+! DarkBlue + Blue
+*color4:  #3F586E
+*color12: #47637B
+! DarkMagenta + Magenta
+*color5:  #722C40
+*color13: #84334A
+!DarkCyan + Cyan (both not tango)
+*color6:  #255050
+*color14: #2A5B5B
+! LightGrey + White
+*color7:  #D5D7DC
+*color15: #F2F2D9
