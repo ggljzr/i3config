@@ -30,13 +30,13 @@ markup=none
 
 [weather]
 color=#61878B
-command=exec python ~/.i3/weatherBar.py
+command=exec python ~/.i3/weatherBar.py --short
 interval=1800
 markup=pango
 
 [memory]
 color=#73A583
-label=Memory
+label=Mem
 #label=  
 interval=30
 
@@ -49,20 +49,20 @@ interval=30
 
 [battery]
 color=#A77899
-label=Battery
+label=Batt
 #label= 
 interval=30
 
 [brightness]
 color=#C49D4E
 interval=1
-label=Brightness
+label=Shine
 #label=  
 command= printf %.0f `xbacklight -get`
 
 [volume]
 color=#BD6B6B
-label=Volume
+label=Vol
 #label=  
 instance=Master
 interval=1
