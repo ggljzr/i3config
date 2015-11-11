@@ -12,7 +12,7 @@ import json
 piFlaskPort = 'raspberrypi.local:5000'
 xresLoc = '/home/ggljzr/.Xresources'
 location = 'Prague'
-apiKey = "c59469dd4ae25cd8f1fd8602fc296718" #you need to register on www.openweathermap.org to get api key
+apiKey = "your-api-key" #you need to register on www.openweathermap.org to get api key
 
 response = None
 localResponse = None
