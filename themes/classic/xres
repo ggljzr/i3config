@@ -22,19 +22,19 @@ URxvt.colorUL: #4682B4
 ! rofi.font: Perfect DOS VGA 437 Win 12
 
 rofi.hlfg: #ffffff
-rofi.hlbg: #000099
+rofi.hlbg: #285577
 
-rofi.fg-active: #ff0000
+rofi.fg-active: #99504C
 rofi.bg-active: #000000
 
 rofi.hlfg-active: #ffffff
-rofi.hlbg-active: #000099
+rofi.hlbg-active: #772A28
 
 rofi.fg-urgent: #ffff00
-rofi.bg-urgent: #000000
+rofi.bg-urgent: #99894C
 
 rofi.hlfg-urgent: #ffffff
-rofi.hlbg-urgent: #999900
+rofi.hlbg-urgent: #776028
 
 
 
@@ -45,25 +45,25 @@ rofi.hlbg-urgent: #999900
 *foreground: #ffffff
 ! Black (not tango) + DarkGrey
 *color0:  #000000
-*color8:  #999999
+*color8:  #545454
 ! DarkRed + Red
-*color1: #990000
-*color9: #ff0000 
+*color1: #772A28
+*color9: #99504C 
 ! DarkGreen + Green
-*color2:  #009900
-*color10: #00ff00
+*color2:  #28773A
+*color10: #4C995B
 ! DarkYellow + Yellow
-*color3:  #999900
-*color11: #ffff00
+*color3:  #776028
+*color11: #99894C
 ! DarkBlue + Blue
-*color4:  #428CFF
-*color12: #0A6AFF
+*color4:  #285577
+*color12: #4C7899
 ! DarkMagenta + Magenta
-*color5:  #990099
-*color13: #ff00ff
+*color5:  #772876
+*color13: #8A4C99
 !DarkCyan + Cyan (both not tango)
-*color6:  #009999
-*color14: #00ffff
+*color6:  #287775
+*color14: #359C99
 ! LightGrey + White
-*color7:  #cccccc
+*color7:  #999999
 *color15: #FFFFFF

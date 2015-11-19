@@ -11,14 +11,14 @@ hi StatusLine           color: #ffffff; background: #000000; font-size: 10pt; fo
 "CmdLine settings excluding Gradient
 hi Normal               color: #ffffff; background: #000000; font-family: Terminus; font-size: 10pt;
 hi CmdLine              background: #000000; color: #ffffff; font-family: Terminus; font-size: 10pt;
-hi CompDesc             color: #009900; width: 50%; font-size: 10pt; font-family: Terminus;
+hi CompDesc             color: #28773A; width: 50%; font-size: 10pt; font-family: Terminus;
 hi CompIcon             width: 16px; min-width: 16px; display: none; margin-right: .5ex;
-hi CompItem[selected]   background: #009900; color: #000000; 
+hi CompItem[selected]   background: #28773A; color: #000000; 
 " hi CompLess             text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
 " hi CompMore             text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
 hi CompMsg              font-style: italic; margin-left: 16px;
 hi CompResult           width: 45%; overflow: hidden;font-size: 10pt; font-family: Terminus; font-weight: normal;
-hi CompTitle            color: #ffffff; background: #000099; font-weight: bold;
+hi CompTitle            color: #ffffff; background: #285577; font-weight: bold;
 hi CompTitle>*          padding: 0 .5ex;
 hi Filter               font-weight: bold;color: #afafaf;
 
@@ -31,31 +31,31 @@ hi Filter               font-weight: bold;color: #afafaf;
 hi FrameIndicator       background-color: #000000; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
 
 hi Bell                 border: 0 none; background-color: #000000;
-hi ErrorMsg             color: #ffffff; background: #990000; font-weight: bold;
+hi ErrorMsg             color: #ffffff; background: #772A28; font-weight: bold;
 
 
 "Hint section
 "hi Hint                 font-family: Sans; font-size: 10px; font-weight: bold; color: #f6e9e9; background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding 0px 1px 0px 1px;
 hi Hint               	font-family: Terminus; font-size: 10px; font-weight: bold; color: white; background-color: #000000; border: 0 none;
 hi Hint::after          content: attr(number);
-hi HintActive           background: #000099; color: #ffffff;
-hi HintElem             background-color: #000000; color: #000099;
+hi HintActive           background: #285577; color: #ffffff;
+hi HintElem             background-color: #000000; color: #285577;
 hi HintImage            opacity: .5;
 
 "Other important stuff
-hi InfoMsg              color: #ffffff; background: #000099;
+hi InfoMsg              color: #ffffff; background: #285577;
 hi Message              white-space: normal; min-width: 100%; padding-left: 2em; text-indent: -2em; display: block;
-hi WarningMsg           color: #ffffff; background: #000099;
-hi ModeMsg              color: #ffffff; background: #000099; "CmdLine when Not in Use
-hi MoreMsg              color: #ffffff; background: #009900;
-hi NonText              color: #000099; min-height: 16px; padding-left: 2px;
+hi WarningMsg           color: #ffffff; background: #285577;
+hi ModeMsg              color: #ffffff; background: #285577; "CmdLine when Not in Use
+hi MoreMsg              color: #ffffff; background: #28773A;
+hi NonText              color: #285577; min-height: 16px; padding-left: 2px;
 hi Question             color: #ffffff; background: #000000; font-weight: bold;
 " hi Search               font-size: inherit; padding: 0; color: #222222; background-color: yellow; padding: 0;
-hi Function             color: 009900; background: #000000;
-hi Number               color: 009900; background: #000000;
-hi String               color: #000000; background: #009900;
-hi Tag                  color: #000000; background: #009900;
-hi Title                color: #000000; background: #009900; font-weight: bold;
+hi Function             color: 28773A; background: #000000;
+hi Number               color: 28773A; background: #000000;
+hi String               color: #000000; background: #28773A;
+hi Tag                  color: #000000; background: #28773A;
+hi Title                color: #000000; background: #28773A; font-weight: bold;
 hi URL                  text-decoration: none; color: #009999; background: inherit;
 hi URL:hover            text-decoration: underline; cursor: pointer;
 hi LineNr               color: #009999; background: #000000;

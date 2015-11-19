@@ -62,10 +62,10 @@ toolbar {
     padding-top: 0px !important;
     margin-bottom: 0px !important;
     border-style: solid !important;
-    border-color: #ffffff !important;
+    border-color: #285577 !important;
     border-radius: 0px !important;
-    background: #ffffff !important;
-    color: #000000 !important;
+    background: #285577 !important;
+    color: #ffffff !important;
 }
 
 .tabbrowser-tab:not([pinned]) .tab-icon-image {
