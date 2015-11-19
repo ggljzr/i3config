@@ -52,7 +52,7 @@ toolbar {
     border-color: #999999 !important;
     border-radius: 0px !important;
     background: #999999 !important;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 
@@ -134,7 +134,7 @@ toolbar {
 }
 
 #TabsToolbar .tabbrowser-tab[selected] {
-    color: #ffffff !important;
+    color: #000000 !important;
     border : none !important;
     border-radius : 0 !important;
     background: #999999 !important;
@@ -144,7 +144,6 @@ toolbar {
 }
    
 #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
-transition: all .4s !important;
     color: #ffffff !important;
     background-color: #000099 !important; 
     border : none !important;
