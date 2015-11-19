@@ -7,7 +7,7 @@ endif
 
 let g:colors_name = 'redmond'
 
-hi Normal ctermfg=black ctermbg=None
+hi Normal ctermfg=white ctermbg=None
 hi Comment ctermfg=darkgrey ctermbg=None
 hi Constant ctermfg=Cyan ctermbg=None 
 hi Operator ctermfg=Blue ctermbg=None
@@ -24,7 +24,7 @@ hi VertSplit ctermfg=blue ctermbg=blue cterm=bold
 hi StatusLine ctermfg=green ctermbg=black
 hi StatusLineNC ctermfg=blue ctermbg=black
 
-hi TabLineSel ctermbg=green ctermfg=black cterm=bold
+hi TabLineSel ctermbg=green ctermfg=black
 hi TabLine ctermbg=None ctermfg=white cterm=bold
 hi TabLineFill ctermfg=grey cterm=bold
 
@@ -36,7 +36,7 @@ hi NERDTreeUp ctermfg=Yellow
 hi NERDTreeHelp ctermfg=Cyan cterm = bold
 
 hi Pmenu ctermfg=white ctermbg=DarkRed
-hi PmenuSel ctermfg=black ctermbg=green cterm=bold
+hi PmenuSel ctermfg=black ctermbg=green
 
 hi Question ctermfg=red
 hi ModeMsg ctermfg=red

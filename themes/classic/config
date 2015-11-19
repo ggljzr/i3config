@@ -37,13 +37,6 @@ bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 #gaps
-for_window [class="^.*"] border pixel 2 #disable window titlebars
-gaps inner 12
-gaps outer 0
-
-#run composition manager
-exec --no-startup-id compton -b
-
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -52,7 +45,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#333333" -nf "#FFF4E8" -sb "#9CA68B" -sf "#2d2d2d"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#000000" -nf "#FFFFFF" -sb "#00ffff" -sf "#000000"'
 
 # change focus
 bindsym $mod+j focus left
@@ -186,27 +179,6 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 
 #focus_follows_mouse no
 
-set $black #2d2d2d
-set $darkGrey #545454
-set $red #A48484
-set $darkRed #7F686B
-set $green #9CA68B
-set $darkGreen #777D6A
-set $yellow #CABA9B
-set $darkYellow #9CBF76
-set $blue #789C9F
-set $darkBlue #6A8082
-set $magenta #978B93
-set $darkMagenta #766C7C
-set $cyan #85ADA0
-set $darkCyan #728C83
-set $white #fff4e8
-set $lightGrey #f0f0f0
-
-set $background #333333
-set $foreground $white
-
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -221,24 +193,8 @@ bar {
 	height 25
 
 	colors{
-		separator $darkRed
-		background $background
-		statusline $white 
-
-		focused_workspace $darkGreen $darkGreen $white
-		active_workspace $darkRed $darkRed $white
-		inactive_workspace $background $background $white
-		urgent_workspace $darkMagenta $darkMagenta $white
+	
 	}
 }
 
-
-
-# class                  border      backgr.     text         indicator
- client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
-# client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
- client.focused_inactive $background $background $foreground $background
- client.unfocused        $background $background $foreground  $background
- client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
-#client.placeholder      #000000 #0c0c0c #ffffff #000000
-
+client.focused #4c7899 #285577 #ffffff #285577

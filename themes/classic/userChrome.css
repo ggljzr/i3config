@@ -15,7 +15,7 @@
 }
 /*
 #identity-icon-label {
-color : #fff4e8;
+color : #ffffff;
 background-color : #7F686B;
 border: none !important;
 margin: 0 0 0 0 !important;
@@ -34,7 +34,7 @@ padding : 0 0 0 0 !important;
 /*
 .autocomplete-richlistbox {
         background: #636e73 !important;
-        color: #fff4e8 !important;
+        color: #ffffff !important;
 	border : none !important;
 }
 */
@@ -49,10 +49,10 @@ toolbar {
     padding-top: 0px !important;
     margin-bottom: -1px !important;
     border-style: solid !important;
-    border-color: #545454 !important;
+    border-color: #999999 !important;
     border-radius: 0px !important;
-    background: #545454 !important;
-    color: #fff4e8 !important;
+    background: #999999 !important;
+    color: #ffffff !important;
 }
 
 
@@ -62,10 +62,10 @@ toolbar {
     padding-top: 0px !important;
     margin-bottom: 0px !important;
     border-style: solid !important;
-    border-color: #7F686B !important;
+    border-color: #ffffff !important;
     border-radius: 0px !important;
-    background: #7F686B !important;
-    color: #fff4e8 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
 }
 
 .tabbrowser-tab:not([pinned]) .tab-icon-image {
@@ -73,7 +73,7 @@ toolbar {
 }
 
 #tabbrowser-tabs tab .tab-close-button {
-	color : #fff4e8 !important;
+	color : #ffffff !important;
 }
 
 #TabsToolbar .tab-background-start,
@@ -88,27 +88,25 @@ toolbar {
  
 
 #TabsToolbar .tabs-newtab-button:hover {
-    background: #9CA68B !important;
-    color: #fff4e8 !important;
-    transition: all .4s !important;
+    background: #009900 !important;
+    color: #ffffff !important;
     border: none !important;
 }
  
 #TabsToolbar .tabs-newtab-button {
     background: none !important;
-    color: #fff4e8 !important;
-    transition: all .4s !important;
+    color: #ffffff !important;
     border: none !important;
 }
 
 #TabsToolbar .tab-background[selected] {
-    background: #545454 !important;
+    background: #999999 !important;
     border: none;
    
 }
 .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
  
-    background: #fff4e8 !important;
+    background: #ffffff !important;
 }
   #TabsToolbar .tabbrowser-tabs {
     transition: all .4s !important;
@@ -118,7 +116,7 @@ toolbar {
      border: none !important;
      border-radius: 0 !important;
      /*background : none !important*/
-     background-color: #333333 !important;
+     background-color: #000000 !important;
     -moz-border-top-colors: none !important;
     -moz-border-left-colors: none !important;
     -moz-border-right-colors: none !important;
@@ -126,7 +124,7 @@ toolbar {
 }
 
 #TabsToolbar .tabbrowser-tab:not([selected]) {
-    color: #fff4e8 !important;
+    color: #ffffff !important;
     border : none !important;
     border-radius : 0 !important;
     background: none !important;
@@ -136,10 +134,10 @@ toolbar {
 }
 
 #TabsToolbar .tabbrowser-tab[selected] {
-    color: #fff4e8 !important;
+    color: #ffffff !important;
     border : none !important;
     border-radius : 0 !important;
-    background: #545454 !important;
+    background: #999999 !important;
     background-clip: initial !important;
     margin-bottom: 0 !important;
     border: none;
@@ -147,8 +145,8 @@ toolbar {
    
 #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
 transition: all .4s !important;
-    color: #fff4e8 !important;
-    background-color: #A48484 !important; 
+    color: #ffffff !important;
+    background-color: #000099 !important; 
     border : none !important;
     border-radius : 0 !important;
     background-clip: initial !important;
