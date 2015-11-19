@@ -88,7 +88,7 @@ toolbar {
  
 
 #TabsToolbar .tabs-newtab-button:hover {
-    background: #009900 !important;
+    background: #28773A !important;
     color: #ffffff !important;
     border: none !important;
 }
@@ -145,7 +145,7 @@ toolbar {
    
 #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
     color: #ffffff !important;
-    background-color: #000099 !important; 
+    background-color: #285577 !important; 
     border : none !important;
     border-radius : 0 !important;
     background-clip: initial !important;
