@@ -49,7 +49,8 @@ toolbar {
     padding-top: 0px !important;
     margin-bottom: -1px !important;
     border-style: solid !important;
-    border-color: #999999 !important;
+    border-width: 2px 2px 0px 2px !important;
+    border-color: #545454 !important;
     border-radius: 0px !important;
     background: #999999 !important;
     color: #000000 !important;
@@ -62,7 +63,8 @@ toolbar {
     padding-top: 0px !important;
     margin-bottom: 0px !important;
     border-style: solid !important;
-    border-color: #285577 !important;
+    border-width: 2px !important;
+    border-color: #4C7899 !important;
     border-radius: 0px !important;
     background: #285577 !important;
     color: #ffffff !important;
@@ -125,7 +127,6 @@ toolbar {
 
 #TabsToolbar .tabbrowser-tab:not([selected]) {
     color: #ffffff !important;
-    border : none !important;
     border-radius : 0 !important;
     background: none !important;
     background-clip: initial !important;
@@ -150,5 +151,4 @@ toolbar {
     border-radius : 0 !important;
     background-clip: initial !important;
     margin-bottom: 0 !important;
-  
 };
