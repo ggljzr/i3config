@@ -1,5 +1,5 @@
 body {
-	background-color: #545454;
+	background-color: #999999;
 	margin: 0px;
 	overflopaw: hidden;
 	font-family: Terminus;
@@ -17,20 +17,21 @@ a {
 #menu a {
 	font-family: Terminus;
 	font-size: 14px;
-	color: #fff4e8;
+	color: #ffffff;
 	text-decoration: none;
 	padding: 5px; 
 }
 #menu a:hover {
-	color: #FFF4E8;
-	background-color: #7F686B;
+	color: #FFFFFF;
+	background-color: #772A28;
 }
 #bgddg {
 	margin-left: 15px;
 	width: 530px;
 	height: 34px;
-	border: none;;
-	background-color: #7F686B;
+	border: 2px solid;
+	border-color: #4C7899;
+	background-color: #285577;
 }
 #formddg {
 	width: 430px;
@@ -38,20 +39,22 @@ a {
 	background: none;
 	font-size: 16px;
 	font-family: Terminus;
-	color: #fff4e8;
+	color: #ffffff;
 	margin: 7px;
 }
 
 #btngo {
-	border: 0px;
+	border-style: solid;
+	border-width: 0px 0px 0px 2px;
+	border-color: #99504C;
 	border-radius: 0px;
-	background-color: #777D6A;
+	background-color: #772A28;
 	width: 45px;
 	height: 34px;
 	font-size: 16px;
 	text-decoration: none;
 	font-family: Terminus;
-	color: #fff4e8;
+	color: #ffffff;
 	margin: 0px 0px 0px 0px;
 	float: right;
 	cursor:pointer;
@@ -59,13 +62,13 @@ a {
 }
 
 #btngo:hover {
-	background-color: #9CA68B; 
+	background-color: #99504C; 
 }
 
 #rssbutton
 {
-	background-color: #7F686B;
-	color : #fff4e8;
+	background-color: #772A28;
+	color : #ffffff;
 	padding:3px;
 	border: none;
 	border-radius: 0px;
@@ -73,7 +76,7 @@ a {
 
 #rssbutton:hover
 {
-	background-color: #A48484; 
+	background-color: #99504C; 
 
 }
 
@@ -84,13 +87,13 @@ a {
 
 .rssFeed a 
 {
-	color: #fff4e8;
+	color: #ffffff;
 }
 
 .rssRow div 
 {
-	color: #fff4e8;
+	color: #ffffff;
 }
 
-.odd {background-color: #333333; }
-.even {background-color: #545454;}
+.odd {background-color: #545454; }
+.even {background-color: #999999;}
