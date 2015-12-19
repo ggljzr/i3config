@@ -28,59 +28,60 @@ command=/usr/local/libexec/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[music]
+color=#9C7F54
+command=exec mpc current
+interval=5
 
 [weather]
-color=#60B1B7
-command=exec python ~/.i3/weatherBar.py --short
+color=#789C9F
+command=exec python ~/.i3/weatherBar.py -s
 interval=1800
 markup=pango
 
-
-
 [memory]
-color=#98E39D
-label=Memory
+color=#A7B48B
+label=Mem
 #label=  
 separator=false
 interval=30
 
 [disk]
 label=Home
-color=#98E39D
+color=#A7B48B
 #label= 
 #instance=/mnt/data
 interval=30
 
 [battery]
-color=#C797CB
-label=Battery
+color=#978B93
+label=Batt
 #label= 
 interval=30
 
 [brightness]
-color=#C8D689
+color=#B9A27E
 interval=1
-label=Brightness
+label=Shine
 #label=  
 command= printf %.0f `xbacklight -get`
 
-
 [volume]
-color=#CC7F76
-label=Volume
+color=#94776B
+label=Vol
 #label=  
 instance=Master
 interval=1
 signal=10
 
 [keyboard layout]
-color=#93D2D7
+color=#85ADA0
 label=
 command= setxkbmap -query | awk '/layout/{print $2}'
 interval=1
 
 [time]
-color=#FFFFFF
+color=#D1D8D1
 command=date '+%A %B %d %H:%M'
 interval=50
 
