@@ -44,7 +44,7 @@ rofi.hlbg-urgent: #9C7F54
 *foreground: #D1D8D1
 ! Black (not tango) + DarkGrey
 *color0:  #2B3632
-*color8:  #575A53
+*color8:  #5D5E5A
 ! DarkRed + Red
 *color1: #796157 
 *color9: #94776B
