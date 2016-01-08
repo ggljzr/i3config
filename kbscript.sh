@@ -9,4 +9,8 @@ elif [[ $LAYOUT == "us" ]]; then
 		setxkbmap cz
 else 
 		setxkbmap cz
-fi 
+fi
+
+#toggle numlock to reset leds
+numlockx toggle
+numlockx toggle
