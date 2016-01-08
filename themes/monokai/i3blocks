@@ -81,8 +81,15 @@ signal=10
 [keyboard layout]
 color=#66EFD2
 label=
-command= setxkbmap -query | awk '/layout/{print $2}'
+command=setxkbmap -query | awk '/layout/{print $2}'
 interval=1
+
+[numlock]
+color=#16D0A8
+label=
+command=sh ~/.i3/num.sh
+interval=1
+markup=pango
 
 [time]
 color=#f8f8f2
