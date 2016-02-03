@@ -80,6 +80,13 @@ label=
 command= setxkbmap -query | awk '/layout/{print $2}'
 interval=1
 
+[numlock]
+label=
+color=#85ADA0
+command= sh ~/.i3/num.sh
+interval=1
+markup=pango
+
 [time]
 color=#fff4e8
 command=date '+%A %B %d %H:%M'

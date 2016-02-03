@@ -13,14 +13,19 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 #
+
 autoload -U colors && colors
-PROMPT="%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[foreground]%}>>%{$reset_color%} "
+PROMPT="%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}>>%{$reset_color%} "
+#PROMPT="%{$fg_bold[red]%}>>%{$reset_color%} "
 
 #RPROMPT='<<'
 #
-case $TERM in
-	rxvt-unicode*)
-		preexec () {print -Pn "\e]0;%~ : $*\a"}
-        ;;
-esac
+#case $TERM in
+#	rxvt-unicode*)
+#		preexec () {print -Pn "\e]0;%~ : $*\a"}
+#        ;;
+#esac
 
+export PYTHONPATH=/home/ggljzr/Documents/git/caffe/python:$PYTHONPATH
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+export LD_LIBRARY_PATH
