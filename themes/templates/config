@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font terminus:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -36,11 +36,8 @@ bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-new_window pixel 4
-new_float pixel 4
-
 #gaps
-for_window [class="^.*"] border pixel 3 #disable window titlebars
+for_window [class="^.*"] border pixel ##border## #disable window titlebars
 gaps inner 12
 gaps outer 0
 
@@ -55,7 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#474848" -nf "#FFF4E8" -sb "#955252" -sf "#60B1B7"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "##bckg##" -nf "##fore##" -sb "##color10##" -sf "##color0##"'
 
 # change focus
 bindsym $mod+j focus left
@@ -170,7 +167,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+End exec --no-starup-id systemctl suspend
+bindsym $mod+End exec --no-startup-id systemctl suspend
 #bindsym $mod+End exec python ~/.i3/logout.py
 
 # Pulse Audio 
@@ -189,54 +186,52 @@ exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
 
 #focus_follows_mouse no
 
-set $black #2d2d2d
-set $darkGrey #4C433E
-set $red #BD6B6B
-set $darkRed #955252
-set $green #A1B67B
-set $darkGreen #7A8A5d
-set $yellow #FFCC66
-set $darkYellow #C49D4E
-set $blue #60B1B7
-set $darkBlue #61878B
-set $magenta #A77899
-set $darkMagenta #7C5971
-set $cyan #7CB6A3
-set $darkCyan #679787
-set $white #fff4e8
-set $lightGrey #f0f0f0
+set $black ##color0##
+set $darkGrey ##color8##
+set $red ##color9##
+set $darkRed ##color1##
+set $green ##color10##
+set $darkGreen ##color2##
+set $yellow ##color11##
+set $darkYellow ##color3##
+set $blue ##color12##
+set $darkBlue ##color4##
+set $magenta ##color13##
+set $darkMagenta ##color5##
+set $cyan ##color14##
+set $darkCyan ##color6##
+set $white ##color7##
+set $lightGrey ##color15##
 
-set $background #474848
-set $foreground $white
+set $background ##bckg##
+set $foreground ##fore##
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#        status_command i3blocks
-#	strip_workspace_numbers yes	
-#	position top
-#	font pango:Monospace 9
-#
-#	separator_symbol "|"
-#
-#	height 25
-#
-#	colors{
-#		separator $darkRed
-#		background $background
-#		statusline $white 
-#
-#		focused_workspace $darkGreen $darkGreen $white
-#		active_workspace $darkRed $darkRed $white
-#		inactive_workspace $background $background $white
-#		urgent_workspace $darkMagenta $darkMagenta $white
-#	}
-#}
+bar {
+        status_command i3blocks
+	strip_workspace_numbers yes	
+	position top
+	#font -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+	font pango:Terminus 12
 
-#start lemonbar
-exec --no-startup-id conky -d -c /$HOME/.i3/empty-conky #space for lemonbar
-exec --no-startup-id sh /$HOME/.i3/lemon
+	separator_symbol "|"
+
+	height 25
+
+	colors{
+		separator $darkRed
+		background $background
+		statusline $white 
+
+		focused_workspace $darkGreen $darkGreen $white
+		active_workspace $darkRed $darkRed $white
+		inactive_workspace $background $background $white
+		urgent_workspace $darkMagenta $darkMagenta $white
+	}
+}
+
 
 
 # class                  border      backgr.     text         indicator

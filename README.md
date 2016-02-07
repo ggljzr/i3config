@@ -22,3 +22,14 @@ TODO: make newtab.css files for different themes to match colors, update themeSc
 these .css files, update Startify color config in vim color scheme for other themes, add pango markup
 support for weather widget to all themes, add colorschemes for vimperator
 
+## simple themes
+
+themes generated from simple file defining basic colors (like in .Xresources) in format
+
+color0:#rgb:tag (tag = red, darkRed, etc)
+
+tag is technically optional, but it is used in script that generates the theme (lightGrey and darkGrey for firefox theme)
+
+other options in file is dark or light theme for firefox and i3 windows border size
+
+for example themes see simple_themes/gotham.theme (try sh themeScript2.sh gotham.theme)
