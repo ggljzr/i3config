@@ -44,6 +44,11 @@ padding : 0 0 0 0 !important;
 }
 
 
+.tab-text
+{
+	font-size: 11pt !important;
+	font-family: ##font_family## !important;
+}
 
 toolbar {
     padding-bottom: 0px !important;
@@ -67,6 +72,8 @@ toolbar {
     border-radius: 0px !important;
     background: ##color4## !important;
     color: ##fore## !important;
+    font-size: 11pt !important;
+    font-family: ##font_family## !important;
 }
 
 .tabbrowser-tab:not([pinned]) .tab-icon-image {
