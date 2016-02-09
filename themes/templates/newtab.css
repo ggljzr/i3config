@@ -2,7 +2,7 @@ body {
 	background-color: ##special1##;
 	margin: 0px;
 	overflow: hidden;
-	font-family: Terminus;
+	font-family: ##font_family##;
 }
 
 a {

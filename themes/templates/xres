@@ -9,13 +9,12 @@ URxvt*iconFile:            /usr/share/icons/Numix-Circle/scalable/apps/terminal.
 !URxvt*iconFile: /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png
 !URxvt*iconFile: /home/ggljzr/Documents/myConfig/icons/flattr-icons/apps/64/bash.svg
 
-URxvt*font: xft:terminus:size=10
-!URxvt*font: xft:monospace:size=9
+URxvt*font: xft:##font_family##:size=##font_size##
 
 xterm*scrollBar: false
 
 ! rofi config
-rofi.font: terminus 9
+rofi.font: ##font_family## ##font_size##
 
 rofi.hlfg: ##fore##
 rofi.hlbg: ##color2##

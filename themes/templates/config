@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font terminus:monospace 8
+font ##font_family##:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -52,7 +52,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "##bckg##" -nf "##fore##" -sb "##color10##" -sf "##color0##"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "##bckg##" -nf "##fore##" -sb "##color10##" -sf "##color0##" -fn "##font_family##"'
 
 # change focus
 bindsym $mod+j focus left
@@ -214,7 +214,7 @@ bar {
 	strip_workspace_numbers yes	
 	position top
 	#font -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-	font pango:Terminus 12
+	font pango:##font_family## 12
 
 	separator_symbol "|"
 

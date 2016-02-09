@@ -29,6 +29,8 @@ color15:#B6CECC:lightGrey
 
 border:4
 
+font:Terminus:10
+
 #jakej ma bejt theme firefoxu
 #musi bejt "dark" nebo "light" jinak se to posere
 ff_theme:dark
