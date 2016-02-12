@@ -28,8 +28,12 @@ color7:#D3EBE8:white
 color15:#B6CECC:lightGrey
 
 border:4
+gaps_inner:16
+gaps_outer:0
 
 font:Terminus:10
+
+
 
 #jakej ma bejt theme firefoxu
 #musi bejt "dark" nebo "light" jinak se to posere

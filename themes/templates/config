@@ -38,8 +38,8 @@ bindsym $mod+Shift+q kill
 
 #gaps
 for_window [class="^.*"] border pixel ##border## #disable window titlebars
-gaps inner 12
-gaps outer 0
+gaps inner ##gaps_inner##
+gaps outer ##gaps_outer##
 
 #run composition manager
 exec --no-startup-id compton -b

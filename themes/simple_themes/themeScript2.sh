@@ -28,8 +28,15 @@ do
 	done
 done
 
+#nastaveni i3-gaps
 border=$(cat $1 | grep border | cut -d: -f2)
 sed -i s/"##border##"/$border/ config.temp
+
+gaps_inner=$(cat $1 | grep gaps_inner | cut -d: -f2)
+gaps_outer=$(cat $1 | grep gaps_outer | cut -d: -f2)
+
+sed -i s/"##gaps_inner##"/$gaps_inner/ config.temp
+sed -i s/"##gaps_outer##"/$gaps_outer/ config.temp
 
 #parsovani barvy do firefox podle toho jesli je theme dark
 #nebo light
