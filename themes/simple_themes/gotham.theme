@@ -24,8 +24,8 @@ color13:#888CA6:magenta
 color6:#59ABA6:darkCyan
 color14:#7EBEBA:cyan
 
-color7:#D3EBE8:white
-color15:#B6CECC:lightGrey
+color7:#B6CECC:lightGrey
+color15:#D3EBE8:white
 
 border:4
 gaps_inner:16
