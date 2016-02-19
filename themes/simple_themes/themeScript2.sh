@@ -48,6 +48,10 @@ sed -i s/"##special1##"/$ff_theme_color/ userChrome.css.temp
 
 sed -i s/"##special1##"/$ff_theme_color/ redmond.vimp.temp
 
+#nastaveni pozadi
+wallpaper_path=$(cat $1 | grep wallpaper | cut -d: -f2)
+sed -i s@"##wallpaper##"@$wallpaper_path@ config.temp
+
 mv xres.temp ~/.Xresources
 mv config.temp ~/.i3/config
 mv dunstrc.temp ~/.config/dunst/dunstrc
@@ -55,5 +59,7 @@ mv i3blocks.temp ~/.i3blocks.conf
 mv newtab.css.temp ~/Documents/ffConfig/newtab/newtab.css
 mv userChrome.css.temp ~/.mozilla/firefox/"$ff_profile"/chrome/userChrome.css 
 mv redmond.vimp.temp ~/.vimperator/colors/redmond.vimp
+
+feh --bg-scale $wallpaper_path
 
 xrdb -load ~/.Xresources

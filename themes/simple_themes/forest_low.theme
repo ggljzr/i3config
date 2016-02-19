@@ -1,0 +1,40 @@
+#theme inspired by https://github.com/whatyouhide/vim-gotham
+
+bckg:#333333
+fore:#fff4e8
+
+color0:#333333:black
+color8:#545454:darkGrey
+
+color1:#7F686B:darkRed
+color9:#A48484:red
+
+color2:#777D6A:darkGreen
+color10:#9CA68B:green
+
+color3:#9C8F76:darkYellow
+color11:#CABA9B:yellow
+
+color4:#6A8082:darkBlue
+color12:#789C9F:blue
+
+color5:#766C7C:darkMagenta
+color13:#978B93:magenta
+
+color6:#728C83:darkCyan
+color14:#85ADA0:cyan
+
+color7:#fff4e8:white
+color15:#f0f0f0:lightGrey
+
+border:4
+gaps_inner:16
+gaps_outer:0
+
+font:Inconsolata:11
+
+wallpaper:/home/ggljzr/Pictures/cloudsrise.jpg
+
+#jakej ma bejt theme firefoxu
+#musi bejt "dark" nebo "light" jinak se to posere
+ff_theme:dark
