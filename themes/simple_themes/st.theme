@@ -2,33 +2,41 @@
 bckg:#1A272D
 fore:#D6ECF0
 
-color0:#1A272D:black
-color8:#2A3D47:darkGrey
+color0:black:#1A272D
+color8:darkGrey:#2A3D47
 
-color1:#7C4650:darkRed
-color9:#BF8D96:red
+color1:darkRed:#7C4650
+color9:red:#BF8D96
 
-color2:#79A489:darkGreen
-color10:#9CC0B2:green
+color2:darkGreen:#79A489
+color10:green:#9CC0B2
 
-color3:#BCB08F:darkYellow
-color11:#CCC3A9:yellow
+color3:darkYellow:#BCB08F
+color11:yellow:#CCC3A9
 
-color4:#7999A4:darkBlue
-color12:#A4BAC1:blue
+color4:darkBlue:#7999A4
+color12:blue:#A4BAC1
 
-color5:#AA92A7:darkMagenta
-color13:#C2B2C0:magenta
+color5:darkMegenta:#AA92A7
+color13:magenta:#C2B2C0
 
-color6:#A4B7B7:darkCyan
-color14:#AAC5C5:cyan
+color6:darkCyan:#A4B7B7
+color14:cyan:#AAC5C5
 
-color7:#C9D3D9:lightGrey
-color15:#D6ECF0:white
+color7:lightGrey:#C9D3D9
+color15:white:#D6ECF0
 
-border:4
-gaps_inner:16
+border:0
+gaps_inner:0
 gaps_outer:0
+
+focused:darkGreen
+inactive:black
+unfocused:black
+urgent:darkRed
+foreground:white
+
+shadows:false
 
 font:Terminus:10
 

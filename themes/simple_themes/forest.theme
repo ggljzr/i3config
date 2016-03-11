@@ -2,33 +2,41 @@
 bckg:#212121
 fore:#fff4e8
 
-color0:#212121:black
-color8:#545454:darkGrey
+color0:black:#212121
+color8:darkGrey:#545454
 
-color1:#955252:darkRed
-color9:#BD6B6B:red
+color1:darkRed:#955252
+color9:red:#BD6B6B:red
 
-color2:#7A8A5D:darkGreen
-color10:#A1B67B:green
+color2:darkGreen:#7A8A5D
+color10:green:#A1B67B
 
-color3:#C49D4E:darkYellow
-color11:#FFCC66:yellow
+color3:darkYellow:#C49D4E
+color11:yellow:#FFCC66
 
-color4:#61878B:darkBlue
-color12:#60B1B7:blue
+color4:darkBlue:#61878B
+color12:blue:#60B1B7
 
-color5:#7C5971:darkMagenta
-color13:#A77899:magenta
+color5:darkMagenta:#7C5971
+color13:magenta:#A77899
 
-color6:#679787:darkCyan
-color14:#7CB6A3:cyan
+color6:darkCyan:#679787
+color14:cyan:#7CB6A3
 
-color7:#f0f0f0:lightGrey
-color15:#fff4e8:white
+color7:lightGrey:#f0f0f0
+color15:white:#fff4e8
 
 border:4
 gaps_inner:16
 gaps_outer:0
+
+focused:darkGreen
+inactive:black
+unfocused:black
+urgent:darkRed
+foreground:white
+
+shadows:true
 
 font:Terminus:10
 

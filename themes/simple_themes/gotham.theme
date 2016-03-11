@@ -3,33 +3,43 @@
 bckg:#0c1014
 fore:#D3EBE9
 
-color0:#0c1014:black
-color8:#245361:darkGrey
+color0:black:#0c1014
+color8:darkGrey:#245361
 
-color1:#C23127:darkRed
-color9:#D94A40:red
+color1:darkRed:#C23127
+color9:red:#D94A40
 
-color2:#279B7E:darkGreen
-color10:#32C8A3:green
+color2:darkGreen:#279B7E
+color10:green:#32C8A3
 
-color3:#D26937:darkYellow
-color11:#EDB443:yellow
+color3:darkYellow:#D26937
+color11:yellow:#EDB443
 
-color4:#378FAA:darkBlue
-color12:#599CAB:blue
+color4:darkBlue:#378FAA
+color12:blue:#599CAB
 
-color5:#4E5166:darkMagenta
-color13:#888CA6:magenta
+color5:darkMagenta:#4E5166
+color13:magenta:#888CA6
 
-color6:#59ABA6:darkCyan
-color14:#7EBEBA:cyan
+color6:darkCyan:#59ABA6
+color14:cyan:#7EBEBA
 
-color7:#B6CECC:lightGrey
-color15:#D3EBE8:white
+color7:lightGrey:#B6CECC
+color15:white:#D3EBE8
 
-border:4
-gaps_inner:16
+#i3 nastaveni
+border:0
+gaps_inner:0
 gaps_outer:0
+
+#i3barvy
+focused:darkGreen
+inactive:darkGrey
+unfocused:darkGrey
+urgent:darkRed
+foreground:white
+
+shadows:false
 
 font:Terminus:10
 

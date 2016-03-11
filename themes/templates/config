@@ -186,27 +186,6 @@ exec --no-startup-id feh --bg-scale ##wallpaper##
 
 #focus_follows_mouse no
 
-set $black ##color0##
-set $darkGrey ##color8##
-set $red ##color9##
-set $darkRed ##color1##
-set $green ##color10##
-set $darkGreen ##color2##
-set $yellow ##color11##
-set $darkYellow ##color3##
-set $blue ##color12##
-set $darkBlue ##color4##
-set $magenta ##color13##
-set $darkMagenta ##color5##
-set $cyan ##color14##
-set $darkCyan ##color6##
-set $white ##color7##
-set $lightGrey ##color15##
-
-set $background ##bckg##
-set $foreground ##fore##
-
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -221,24 +200,22 @@ bar {
 	height 25
 
 	colors{
-		separator $darkRed
-		background $background
-		statusline $white 
+		separator ##focused##
+		background ##bckg##
+		statusline ##fore## 
 
-		focused_workspace $darkGreen $darkGreen $white
-		active_workspace $darkRed $darkRed $white
-		inactive_workspace $background $background $white
-		urgent_workspace $darkMagenta $darkMagenta $white
+		focused_workspace ##focused## ##focused## ##fore##
+		active_workspace ##inactive## ##inactive## ##fore##
+		inactive_workspace ##bckg## ##bckg## ##fore##
+		urgent_workspace ##urgent## ##urgent## ##fore##
 	}
 }
 
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
-# client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
- client.focused_inactive $background $background $foreground $background
- client.unfocused        $background $background $foreground  $background
- client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
-#client.placeholder      #000000 #0c0c0c #ffffff #000000
+ client.focused          ##focused##  ##focused## ##foreground## ##focused##
+ client.focused_inactive ##inactive## ##inactive## ##foreground## ##inactive##
+ client.unfocused        ##unfocused## ##unfocused## ##foreground## ##unfocused##
+ client.urgent      	 ##urgent## ##urgent## ##foreground##  ##urgent##
 
