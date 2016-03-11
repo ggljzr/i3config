@@ -106,3 +106,7 @@ compton -b
 
 #restart i3
 i3-msg restart
+
+#restart dunst
+pkill dunst
+notify-send "theme: $1"
