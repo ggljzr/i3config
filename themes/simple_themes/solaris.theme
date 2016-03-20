@@ -1,4 +1,4 @@
-bckg:#E6E4D1
+bckg:#fff7e9
 fore:#000000
 
 color0:black:#000000
@@ -16,14 +16,14 @@ color11:yellow:#CD7523
 color4:darkBlue:#2C5363
 color12:blue:#417990
 
-color5:darkMagenta:#7A486A
-color13:magenta:#8D537A
+color5:darkMagenta:#9E9CAF
+color13:magenta:#B24D7A
 
 color6:darkCyan:#2F6F6E
 color14:cyan:#439D9C
 
 color7:lightGrey:#A8B4AF
-color15:white:#E6E4D1
+color15:white:#fff7e9
 
 #i3 nastaveni
 border:0
@@ -31,9 +31,9 @@ gaps_inner:0
 gaps_outer:0
 
 #i3barvy
-i3_focused:blue
-i3_inactive:darkBlue
-i3_unfocused:darkBlue
+i3_focused:magenta
+i3_inactive:darkMagenta
+i3_unfocused:darkMagenta
 i3_urgent:darkRed
 i3_foreground:white
 
