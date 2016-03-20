@@ -92,9 +92,9 @@ sed -i s@"##wallpaper##"@$wallpaper_path@ config.temp
 #vim
 if [ $theme == "dark" ]
 then
-	sed -i s/"##vim_normal##"/"white"/ redmond.vim.temp
+	sed -i s/"##vim_normal##"/"white"/g redmond.vim.temp
 else
-	sed -i s/"##vim_normal##"/"black"/ redmond.vim.temp
+	sed -i s/"##vim_normal##"/"black"/g redmond.vim.temp
 fi
 
 mv xres.temp ~/.Xresources

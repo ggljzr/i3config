@@ -25,7 +25,7 @@ hi StatusLine ctermfg=green ctermbg=black
 hi StatusLineNC ctermfg=darkblue ctermbg=white
 
 hi TabLineSel ctermbg=green ctermfg=black cterm=bold
-hi TabLine ctermbg=None ctermfg=white cterm=bold
+hi TabLine ctermbg=None ctermfg=##vim_normal## cterm=bold
 hi TabLineFill ctermfg=grey cterm=bold
 
 hi Title ctermfg=red
