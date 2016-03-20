@@ -1,4 +1,3 @@
-
 bckg:#212121
 fore:#fff4e8
 
@@ -30,18 +29,18 @@ border:4
 gaps_inner:16
 gaps_outer:0
 
-focused:darkGreen
-inactive:black
-unfocused:black
-urgent:darkRed
-foreground:white
+i3_focused:darkGreen
+i3_inactive:black
+i3_unfocused:black
+i3_urgent:darkRed
+i3_foreground:white
 
 shadows:true
+
+zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}>>%{$reset_color%} "
 
 font:Terminus:10
 
 wallpaper:/home/ggljzr/Pictures/1430518751272.jpg
 
-#jakej ma bejt theme firefoxu
-#musi bejt "dark" nebo "light" jinak se to posere
-ff_theme:dark
+theme:dark

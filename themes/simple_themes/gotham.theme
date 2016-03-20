@@ -1,4 +1,4 @@
-#theme inspired by https://github.com/whatyouhide/vim-gotham
+#inspired by https://github.com/whatyouhide/vim-gotham
 
 bckg:#0c1014
 fore:#D3EBE9
@@ -33,18 +33,19 @@ gaps_inner:0
 gaps_outer:0
 
 #i3barvy
-focused:darkGreen
-inactive:darkGrey
-unfocused:darkGrey
-urgent:darkRed
-foreground:white
+i3_focused:darkGreen
+i3_inactive:darkGrey
+i3_unfocused:darkGrey
+i3_urgent:darkRed
+i3_foreground:white
 
 shadows:false
 
 font:Terminus:10
 
+zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}>>%{$reset_color%} "
+
 wallpaper:/home/ggljzr/Pictures/245361.png
 
-#jakej ma bejt theme firefoxu
 #musi bejt "dark" nebo "light" jinak se to posere
-ff_theme:dark
+theme:dark

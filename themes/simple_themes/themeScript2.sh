@@ -60,12 +60,12 @@ fi
 
 #nastaveni i3 barev
 
-for placeholder in "focused" "inactive" "unfocused" "urgent" "foreground"
+for placeholder in "i3_focused" "i3_inactive" "i3_unfocused" "i3_urgent" "i3_foreground" 
 do
 	color=$(cat $1 | grep "^$placeholder" | cut -d: -f2)
 	color_val=$(cat $1 | grep ":$color:" | cut -d: -f3)
 	sed -i s/"##"$placeholder"##"/$color_val/g config.temp
-done	
+done
 
 #vypnuti/zapnuti stinu
 shadows=$(cat $1 | grep shadows | cut -d: -f2)
@@ -73,17 +73,29 @@ sed -i s/"##shadows##"/$shadows/g compton.conf.temp
 
 #parsovani barvy do firefox podle toho jesli je theme dark
 #nebo light
-ff_theme=$(cat $1 | grep ff_theme | cut -d: -f2)
-ff_theme_color=$(cat $1 | grep ":$ff_theme"Grey: | cut -d: -f3)
+theme=$(cat $1 | grep theme | cut -d: -f2)
+ff_theme_color=$(cat $1 | grep ":$theme"Grey: | cut -d: -f3)
 sed -i s/"##special1##"/$ff_theme_color/g newtab.css.temp
 
 sed -i s/"##special1##"/$ff_theme_color/g userChrome.css.temp
 
 sed -i s/"##special1##"/$ff_theme_color/g redmond.vimp.temp
 
+#zshprompt
+zshprompt=$(cat $1 | grep zshprompt | cut -d: -f2)
+sed -i s/"^PROMPT=.*$"/"PROMPT=$zshprompt"/ ~/.zshrc
+
 #nastaveni pozadi
 wallpaper_path=$(cat $1 | grep wallpaper | cut -d: -f2)
 sed -i s@"##wallpaper##"@$wallpaper_path@ config.temp
+
+#vim
+if [ $theme == "dark" ]
+then
+	sed -i s/"##vim_normal##"/"white"/ redmond.vim.temp
+else
+	sed -i s/"##vim_normal##"/"black"/ redmond.vim.temp
+fi
 
 mv xres.temp ~/.Xresources
 mv config.temp ~/.i3/config
@@ -93,6 +105,7 @@ mv newtab.css.temp ~/Documents/ffConfig/newtab/newtab.css
 mv userChrome.css.temp ~/.mozilla/firefox/"$ff_profile"/chrome/userChrome.css 
 mv redmond.vimp.temp ~/.vimperator/colors/redmond.vimp
 mv compton.conf.temp ~/.config/compton.conf
+mv redmond.vim.temp ~/.vim/colors/redmond.vim
 
 #load wallpaper
 feh --bg-scale $wallpaper_path

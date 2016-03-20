@@ -30,13 +30,15 @@ border:0
 gaps_inner:0
 gaps_outer:0
 
-focused:darkGreen
-inactive:black
-unfocused:black
-urgent:darkRed
-foreground:white
+i3_focused:darkGreen
+i3_inactive:black
+i3_unfocused:black
+i3_urgent:darkRed
+i3_foreground:white
 
 shadows:false
+
+zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}>>%{$reset_color%} "
 
 font:Terminus:10
 

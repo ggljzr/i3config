@@ -200,22 +200,22 @@ bar {
 	height 25
 
 	colors{
-		separator ##focused##
+		separator ##i3_focused##
 		background ##bckg##
 		statusline ##fore## 
 
-		focused_workspace ##focused## ##focused## ##fore##
-		active_workspace ##inactive## ##inactive## ##fore##
+		focused_workspace ##i3_focused## ##i3_focused## ##i3_foreground##
+		active_workspace ##i3_inactive## ##i3_inactive## ##i3b_foreground##
 		inactive_workspace ##bckg## ##bckg## ##fore##
-		urgent_workspace ##urgent## ##urgent## ##fore##
+		urgent_workspace ##i3_urgent## ##i3_urgent## ##i3_foreground##
 	}
 }
 
 
 
 # class                  border      backgr.     text         indicator
- client.focused          ##focused##  ##focused## ##foreground## ##focused##
- client.focused_inactive ##inactive## ##inactive## ##foreground## ##inactive##
- client.unfocused        ##unfocused## ##unfocused## ##foreground## ##unfocused##
- client.urgent      	 ##urgent## ##urgent## ##foreground##  ##urgent##
+ client.focused          ##i3_focused##  ##i3_focused## ##i3_foreground## ##i3_focused##
+ client.focused_inactive ##i3_inactive## ##i3_inactive## ##i3_foreground## ##i3_inactive##
+ client.unfocused        ##i3_unfocused## ##i3_unfocused## ##i3_foreground## ##i3_unfocused##
+ client.urgent      	 ##i3_urgent## ##i3_urgent## ##i3_foreground##  ##i3_urgent##
 
