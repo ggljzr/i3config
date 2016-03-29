@@ -35,7 +35,7 @@ i3_unfocused:darkGrey
 i3_urgent:darkRed
 i3_foreground:white
 
-shadows:true
+shadows:false
 
 zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}>>%{$reset_color%} "
 
