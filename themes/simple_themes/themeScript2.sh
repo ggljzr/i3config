@@ -8,11 +8,15 @@ ff_profile="az8dnp0b.default-1441248752478"
 declare -a templates
 IFS=' ' read -r -a templates <<< $(ls $template_path)
 
-font_size=$(cat $1 | grep font | cut -d: -f3)
-font_family=$(cat $1 | grep font | cut -d: -f2)
+#parse theme
+parsed_theme="parsed_theme.temp"
+sed '/^#/ d' $1 > $parsed_theme
 
-bckg=$(cat $1 | grep bckg | cut -d: -f2)
-fore=$(cat $1 | grep "^fore:.*" | cut -d: -f2)
+font_size=$(cat $parsed_theme | grep font | cut -d: -f3)
+font_family=$(cat $parsed_theme | grep font | cut -d: -f2)
+
+bckg=$(cat $parsed_theme | grep bckg | cut -d: -f2)
+fore=$(cat $parsed_theme | grep "^fore:.*" | cut -d: -f2)
 
 color_pat="^#[a-fA-F0-9]{6}$"
 
@@ -28,17 +32,17 @@ do
 
 	for i in {0..15}
 	do
-		color=$(cat $1 | grep "color$i:" | cut -d: -f3)
+		color=$(cat $parsed_theme | grep "color$i:" | cut -d: -f3)
 		sed -i s/"##color$i##"/$color/g "$entry".temp
 	done
 done
 
 #nastaveni i3-gaps
-border=$(cat $1 | grep border | cut -d: -f2)
+border=$(cat $parsed_theme | grep border | cut -d: -f2)
 
 #kdyz sou mezery 0, tak vodstrani i3gaps funkci z konfigu
-gaps_inner=$(cat $1 | grep gaps_inner | cut -d: -f2)
-gaps_outer=$(cat $1 | grep gaps_outer | cut -d: -f2)
+gaps_inner=$(cat $parsed_theme | grep gaps_inner | cut -d: -f2)
+gaps_outer=$(cat $parsed_theme | grep gaps_outer | cut -d: -f2)
 
 if (( $gaps_inner == 0 && $gaps_outer == 0 )) 
 then
@@ -64,25 +68,25 @@ fi
 
 for placeholder in "i3_focused" "i3_inactive" "i3_unfocused" "i3_urgent" "i3_foreground" 
 do
-	color=$(cat $1 | grep "^$placeholder" | cut -d: -f2)
+	color=$(cat $parsed_theme | grep "^$placeholder" | cut -d: -f2)
 	if [[ $color =~ $color_pat ]]
 	then
 		color_val=$color
 	else	
-		color_val=$(cat $1 | grep ":$color:" | cut -d: -f3)
+		color_val=$(cat $parsed_theme | grep ":$color:" | cut -d: -f3)
 	fi
 
 	sed -i s/"##"$placeholder"##"/$color_val/g config.temp
 done
 
 #vypnuti/zapnuti stinu
-shadows=$(cat $1 | grep shadows | cut -d: -f2)
+shadows=$(cat $parsed_theme | grep shadows | cut -d: -f2)
 sed -i s/"##shadows##"/$shadows/g compton.conf.temp
 
 #parsovani barvy do firefox podle toho jesli je theme dark
 #nebo light
-theme=$(cat $1 | grep theme | cut -d: -f2)
-ff_theme_color=$(cat $1 | grep ":$theme"Grey: | cut -d: -f3)
+theme=$(cat $parsed_theme | grep theme | cut -d: -f2)
+ff_theme_color=$(cat $parsed_theme | grep ":$theme"Grey: | cut -d: -f3)
 sed -i s/"##special1##"/$ff_theme_color/g newtab.css.temp
 
 sed -i s/"##special1##"/$ff_theme_color/g userChrome.css.temp
@@ -90,11 +94,11 @@ sed -i s/"##special1##"/$ff_theme_color/g userChrome.css.temp
 sed -i s/"##special1##"/$ff_theme_color/g redmond.vimp.temp
 
 #zshprompt
-zshprompt=$(cat $1 | grep zshprompt | cut -d: -f2)
+zshprompt=$(cat $parsed_theme | grep zshprompt | cut -d: -f2)
 sed -i s/"^PROMPT=.*$"/"PROMPT=$zshprompt"/ ~/.zshrc
 
 #nastaveni pozadi
-wallpaper_path=$(cat $1 | grep wallpaper | cut -d: -f2)
+wallpaper_path=$(cat $parsed_theme | grep wallpaper | cut -d: -f2)
 sed -i s@"##wallpaper##"@$wallpaper_path@ config.temp
 
 #vim
