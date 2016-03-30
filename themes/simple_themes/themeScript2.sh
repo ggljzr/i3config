@@ -14,6 +14,8 @@ font_family=$(cat $1 | grep font | cut -d: -f2)
 bckg=$(cat $1 | grep bckg | cut -d: -f2)
 fore=$(cat $1 | grep "^fore:.*" | cut -d: -f2)
 
+color_pat="^#[a-fA-F0-9]{6}$"
+
 for entry in "${templates[@]}"
 do
 
@@ -63,7 +65,13 @@ fi
 for placeholder in "i3_focused" "i3_inactive" "i3_unfocused" "i3_urgent" "i3_foreground" 
 do
 	color=$(cat $1 | grep "^$placeholder" | cut -d: -f2)
-	color_val=$(cat $1 | grep ":$color:" | cut -d: -f3)
+	if [[ $color =~ $color_pat ]]
+	then
+		color_val=$color
+	else	
+		color_val=$(cat $1 | grep ":$color:" | cut -d: -f3)
+	fi
+
 	sed -i s/"##"$placeholder"##"/$color_val/g config.temp
 done
 

@@ -29,7 +29,7 @@ border:0
 gaps_inner:0
 gaps_outer:0
 
-i3_focused:darkBlue
+i3_focused:#4B6983
 i3_inactive:darkGrey
 i3_unfocused:darkGrey
 i3_urgent:darkRed
