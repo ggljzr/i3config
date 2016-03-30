@@ -1,3 +1,7 @@
 komenty v .theme souborech
 mozna prejit  na python a toml
 lepsi podpora svetlejch motivu
+
+mozna rozdelit .theme soubory do
+jednoho s barvama a jednoho s nastavenim
+aby mohly bejt ruzny barvy s ruznym nastavenim
