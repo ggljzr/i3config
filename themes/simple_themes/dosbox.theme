@@ -13,7 +13,7 @@ color10:green:#00FF00
 color3:darkYellow:#CDCD00
 color11:yellow:#FFFF00
 
-color4:darkBlue:#4682B4
+color4:darkBlue:#1919E5
 color12:blue:#1E90FF
 
 color5:darkMagenta:#CD00CD
@@ -29,7 +29,7 @@ border:0
 gaps_inner:0
 gaps_outer:0
 
-i3_focused:blue
+i3_focused:darkBlue
 i3_inactive:darkGrey
 i3_unfocused:darkGrey
 i3_urgent:darkRed
