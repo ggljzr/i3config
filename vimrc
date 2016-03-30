@@ -40,10 +40,15 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'kovisoft/slimv'
 Plugin 'rust-lang/rust.vim'
 Plugin 'mhinz/vim-startify'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+nmap <F8> :TagbarToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
@@ -90,6 +95,7 @@ if &term=="xterm"
      set t_Sf=[3%dm
 endif
 
+let Tlist_Inc_Winwidth = 0 
 
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
