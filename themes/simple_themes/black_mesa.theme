@@ -4,7 +4,7 @@ fore:#f0f0f0
 color0:black:#222222
 color8:darkGrey:#555555
 
-color1:darkRed:#AC32431
+color1:darkRed:#A32431
 color9:red:#C02F3E
 
 color2:darkGreen:#359C75
@@ -16,8 +16,8 @@ color11:yellow:#DC8A50
 color4:darkBlue:#377CB8
 color12:blue:#5E9BCF
 
-color5:darkMagenta:#B77195
-color13:magenta:#BE7E9F
+color5:darkMagenta:#8A54BB
+color13:magenta:#9C6DC5
 
 color6:darkCyan:#29A89B
 color14:cyan:#2FC0B1
