@@ -41,6 +41,6 @@ zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold
 
 font:terminus:12
 
-wallpaper:/home/ggljzr/Pictures/1429225089229.jpg
+wallpaper:/home/ggljzr/Pictures/1429225089299.jpg
 
 theme:dark
