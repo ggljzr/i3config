@@ -22,19 +22,17 @@ color_pat="^#[a-fA-F0-9]{6}$"
 
 for entry in "${templates[@]}"
 do
+    sed s/"##bckg##"/$bckg/g $template_path/$entry > "$entry".temp
+    sed -i s/"##fore##"/$fore/g "$entry".temp
 
+    sed -i s/"##font_size##"/$font_size/g "$entry".temp
+    sed -i s/"##font_family##"/$font_family/g "$entry".temp
 
-	sed s/"##bckg##"/$bckg/g $template_path/$entry > "$entry".temp
-	sed -i s/"##fore##"/$fore/g "$entry".temp
-	
-	sed -i s/"##font_size##"/$font_size/g "$entry".temp
-	sed -i s/"##font_family##"/$font_family/g "$entry".temp
-
-	for i in {0..15}
-	do
-		color=$(cat $parsed_theme | grep "color$i:" | cut -d: -f3)
-		sed -i s/"##color$i##"/$color/g "$entry".temp
-	done
+    for i in {0..15}
+    do
+        color=$(cat $parsed_theme | grep "color$i:" | cut -d: -f3)
+        sed -i s/"##color$i##"/$color/g "$entry".temp
+    done
 done
 
 #nastaveni i3-gaps
@@ -44,39 +42,39 @@ border=$(cat $parsed_theme | grep border | cut -d: -f2)
 gaps_inner=$(cat $parsed_theme | grep gaps_inner | cut -d: -f2)
 gaps_outer=$(cat $parsed_theme | grep gaps_outer | cut -d: -f2)
 
-if (( $gaps_inner == 0 && $gaps_outer == 0 )) 
+if (( $gaps_inner == 0 && $gaps_outer == 0 ))
 then
-	sed -i s/"gaps inner"/"##"/ config.temp
-	sed -i s/"gaps outer"/"##"/ config.temp
+    sed -i s/"gaps inner"/"##"/ config.temp
+    sed -i s/"gaps outer"/"##"/ config.temp
 
-	#kdyz je border 0, pouzije klasicky i3 dekorace/titlebars
-	if (( $border == 0 )) 
-	then
-		sed -i s/"##titlebars##"/"##"/g config.temp
-	else
-		sed -i s/"##titlebars##"/""/g config.temp
-		sed -i s/"##border##"/$border/g config.temp
-	fi
+    #kdyz je border 0, pouzije klasicky i3 dekorace/titlebars
+    if (( $border == 0 ))
+    then
+        sed -i s/"##titlebars##"/"##"/g config.temp
+    else
+        sed -i s/"##titlebars##"/""/g config.temp
+        sed -i s/"##border##"/$border/g config.temp
+    fi
 else
-	sed -i s/"##gaps_inner##"/$gaps_inner/g config.temp
-	sed -i s/"##gaps_outer##"/$gaps_outer/g config.temp
-	sed -i s/"##titlebars"/""/g config.temp
-	sed -i s/"##border##"/$border/g config.temp
+    sed -i s/"##gaps_inner##"/$gaps_inner/g config.temp
+    sed -i s/"##gaps_outer##"/$gaps_outer/g config.temp
+    sed -i s/"##titlebars"/""/g config.temp
+    sed -i s/"##border##"/$border/g config.temp
 fi
 
 #nastaveni i3 barev
 
-for placeholder in "i3_focused" "i3_inactive" "i3_unfocused" "i3_urgent" "i3_foreground" 
+for placeholder in "i3_focused" "i3_inactive" "i3_unfocused" "i3_urgent" "i3_foreground"
 do
-	color=$(cat $parsed_theme | grep "^$placeholder" | cut -d: -f2)
-	if [[ $color =~ $color_pat ]]
-	then
-		color_val=$color
-	else	
-		color_val=$(cat $parsed_theme | grep ":$color:" | cut -d: -f3)
-	fi
+    color=$(cat $parsed_theme | grep "^$placeholder" | cut -d: -f2)
+    if [[ $color =~ $color_pat ]]
+    then
+        color_val=$color
+    else
+        color_val=$(cat $parsed_theme | grep ":$color:" | cut -d: -f3)
+    fi
 
-	sed -i s/"##"$placeholder"##"/$color_val/g config.temp
+    sed -i s/"##"$placeholder"##"/$color_val/g config.temp
 done
 
 #vypnuti/zapnuti stinu
@@ -104,9 +102,9 @@ sed -i s@"##wallpaper##"@$wallpaper_path@ config.temp
 #vim
 if [ $theme == "dark" ]
 then
-	sed -i s/"##vim_normal##"/"white"/g redmond.vim.temp
+    sed -i s/"##vim_normal##"/"white"/g redmond.vim.temp
 else
-	sed -i s/"##vim_normal##"/"black"/g redmond.vim.temp
+    sed -i s/"##vim_normal##"/"black"/g redmond.vim.temp
 fi
 
 mv xres.temp ~/.Xresources
@@ -114,7 +112,7 @@ mv config.temp ~/.i3/config
 mv dunstrc.temp ~/.config/dunst/dunstrc
 mv i3blocks.temp ~/.i3blocks.conf
 mv newtab.css.temp ~/Documents/ffConfig/newtab/newtab.css
-mv userChrome.css.temp ~/.mozilla/firefox/"$ff_profile"/chrome/userChrome.css 
+mv userChrome.css.temp ~/.mozilla/firefox/"$ff_profile"/chrome/userChrome.css
 mv redmond.vimp.temp ~/.vimperator/colors/redmond.vimp
 mv compton.conf.temp ~/.config/compton.conf
 mv redmond.vim.temp ~/.vim/colors/redmond.vim

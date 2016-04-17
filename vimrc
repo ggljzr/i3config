@@ -13,6 +13,11 @@ set statusline+=%P
 set statusline+=) 
 set laststatus=2
 
+set tabstop=8
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
@@ -43,12 +48,14 @@ Plugin 'mhinz/vim-startify'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
+Plugin 'Chiel92/vim-autoformat'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
+nmap <F3> :Autoformat<CR>
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
