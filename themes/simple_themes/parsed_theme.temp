@@ -1,46 +1,46 @@
-bckg:#000000
-fore:#DEDEDE
+bckg:#212121
+fore:#fff4e8
 
-color0:black:#000000
-color8:darkGrey:#555555
+color0:black:#212121
+color8:darkGrey:#545454
 
-color1:darkRed:#CD0000
-color9:red:#FF0000
+color1:darkRed:#955252
+color9:red:#BD6B6B
 
-color2:darkGreen:#00CD00
-color10:green:#00FF00
+color2:darkGreen:#7A8A5D
+color10:green:#A1B67B
 
-color3:darkYellow:#CDCD00
-color11:yellow:#FFFF00
+color3:darkYellow:#C49D4E
+color11:yellow:#FFCC66
 
-color4:darkBlue:#4682B4
-color12:blue:#1E90FF
+color4:darkBlue:#61878B
+color12:blue:#60B1B7
 
-color5:darkMagenta:#CD00CD
-color13:magenta:#FF00FF
+color5:darkMagenta:#7C5971
+color13:magenta:#A77899
 
-color6:darkCyan:#00CDCD
-color14:cyan:#00FFFF
+color6:darkCyan:#679787
+color14:cyan:#7CB6A3
 
-color7:lightGrey:#999999
-color15:white:#DEDEDE
+color7:lightGrey:#f0f0f0
+color15:white:#fff4e8
 
-border:0
-gaps_inner:0
+border:4
+gaps_inner:16
 gaps_outer:0
 
-i3_focused:#4B6983
-i3_inactive:darkGrey
-i3_unfocused:darkGrey
+i3_focused:darkGreen
+i3_inactive:black
+i3_unfocused:black
 i3_urgent:darkRed
 i3_foreground:white
 
-shadows:false
+shadows:true
 
 zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold[green]%}%1~ %{$reset_color%}%{$fg_bold[white]%}>>%{$reset_color%} "
 
 font:Terminus:10
 
-wallpaper:/home/ggljzr/Pictures/win98.png
+wallpaper:/home/ggljzr/Pictures/1430518751272.jpg
 
 theme:dark
