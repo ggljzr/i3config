@@ -18,6 +18,8 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+set splitbelow
+
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
@@ -42,7 +44,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'kovisoft/slimv'
 Plugin 'rust-lang/rust.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'rking/ag.vim'
