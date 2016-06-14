@@ -3,7 +3,7 @@
 #TODO vim support, tam neni aby to nastavilo tmavy pismo pro bilej terminal
 
 template_path=~/Documents/git/i3config/themes/templates
-ff_profile="az8dnp0b.default-1441248752478"
+ff_profile="s03o8lhu.default"
 
 declare -a templates
 IFS=' ' read -r -a templates <<< $(ls $template_path)
@@ -99,6 +99,8 @@ sed -i s/"^PROMPT=.*$"/"PROMPT=$zshprompt"/ ~/.zshrc
 wallpaper_path=$(cat $parsed_theme | grep wallpaper | cut -d: -f2)
 sed -i s@"##wallpaper##"@$wallpaper_path@ config.temp
 
+rm -f $parsed_theme
+
 #vim
 if [ $theme == "dark" ]
 then
@@ -111,9 +113,9 @@ mv xres.temp ~/.Xresources
 mv config.temp ~/.i3/config
 mv dunstrc.temp ~/.config/dunst/dunstrc
 mv i3blocks.temp ~/.i3blocks.conf
-mv newtab.css.temp ~/Documents/ffConfig/newtab/newtab.css
+#mv newtab.css.temp ~/Documents/ffConfig/newtab/newtab.css
 mv userChrome.css.temp ~/.mozilla/firefox/"$ff_profile"/chrome/userChrome.css
-mv redmond.vimp.temp ~/.vimperator/colors/redmond.vimp
+#mv redmond.vimp.temp ~/.vimperator/colors/redmond.vimp
 mv compton.conf.temp ~/.config/compton.conf
 mv redmond.vim.temp ~/.vim/colors/redmond.vim
 
@@ -133,3 +135,6 @@ i3-msg restart
 #restart dunst
 pkill dunst
 notify-send "theme: $1"
+
+#cleanup
+rm *.temp
