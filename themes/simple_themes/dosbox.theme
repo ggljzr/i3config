@@ -29,7 +29,7 @@ border:0
 gaps_inner:0
 gaps_outer:0
 
-i3_focused:#4B6983
+i3_focused:#285577
 i3_inactive:darkGrey
 i3_unfocused:darkGrey
 i3_urgent:darkRed
@@ -41,6 +41,6 @@ zshprompt:"%{$fg_bold[red]%}[%n%{$reset_color%}%{$fg_bold[blue]%}@%m] %{$fg_bold
 
 font:Terminus:10
 
-wallpaper:/home/ggljzr/Pictures/win98.png
+wallpaper:/home/ggljzr/Pictures/000.png
 
 theme:dark
