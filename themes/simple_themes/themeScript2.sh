@@ -3,7 +3,7 @@
 #TODO vim support, tam neni aby to nastavilo tmavy pismo pro bilej terminal
 
 template_path=~/Documents/git/i3config/themes/templates
-ff_profile="s03o8lhu.default"
+ff_profile="so3i8lhu.default"
 
 declare -a templates
 IFS=' ' read -r -a templates <<< $(ls $template_path)
