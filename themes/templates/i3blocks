@@ -89,7 +89,7 @@ markup=pango
 
 [time]
 color=##fore##
-command=date '+%A %B %d %H:%M'
+command=LC_TIME=en_US date '+%A %B %d %H:%M'
 interval=50
 
 # Generic media player support
