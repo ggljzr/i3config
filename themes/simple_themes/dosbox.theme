@@ -1,5 +1,5 @@
 bckg:#000000
-fore:#DEDEDE
+fore:#ffffff
 
 color0:black:#000000
 color8:darkGrey:#555555
@@ -23,7 +23,7 @@ color6:darkCyan:#00CDCD
 color14:cyan:#00FFFF
 
 color7:lightGrey:#999999
-color15:white:#DEDEDE
+color15:white:#ffffff
 
 border:0
 gaps_inner:0
