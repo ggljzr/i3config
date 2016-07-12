@@ -7,9 +7,12 @@ try:
 except:
     out = "Some error"
 else:
-    out = str(out)
-    out = out.split('"')[1]
+    if len(out) > 0:
+        out = str(out)
+        out = out.split('"')[1]
+    else:
+        out = None
 
-if out != "Spotify":
+if out != "Spotify" and out != None:
     sys.stdout.write(out)
 
