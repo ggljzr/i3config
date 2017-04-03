@@ -13,6 +13,6 @@ else:
     else:
         out = None
 
-if out[1:] != "potify" and out != None:
+if out != None and out[1:] != "potify":
     sys.stdout.write(out)
 
