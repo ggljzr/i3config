@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font terminus:monospace 8
+font Terminus:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -31,15 +31,14 @@ floating_modifier $mod
 
 # start a terminal
 # clock cursor fix
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-#gaps
-for_window [class="^.*"] border pixel 2 #disable window titlebars
-gaps inner 12
-gaps outer 0
+###
+## inner ####_inner##
+## outer ####_outer##
 
 #run composition manager
 exec --no-startup-id compton -b
@@ -52,7 +51,7 @@ exec --no-startup-id compton -b
 # installed.
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#3F4040" -nf "#FFF4E8" -sb "#7A8A5D" -sf "#fff4e8"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -p ">>" -nb "#000000" -nf "#ffffff" -sb "#285577" -sf "#ffffff" -fn "Terminus"'
 
 # change focus
 bindsym $mod+j focus left
@@ -99,7 +98,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 #kb toggle
-bindsym $mod+c exec --no-startup-id sh ~/.i3/kbscript.sh
+bindsym $mod+c exec --no-startup-id bash ~/.i3/kbscript.sh
 
 #window switcher
 bindsym $mod+Tab exec --no-startup-id rofi -show window
@@ -171,41 +170,20 @@ bindsym $mod+End exec --no-startup-id systemctl suspend
 #bindsym $mod+End exec python ~/.i3/logout.py
 
 # Pulse Audio 
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse -q set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse -q set Master 5%- unmute
  
-bindsym XF86AudioMute exec amixer -q sset Master toggle # mute sound
+bindsym XF86AudioMute exec amixer -D pulse -q sset Master toggle # mute sound
 
 # # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbright +25 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbright -25 # decrease screen brightness
 
 #startup
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale /$HOME/Pictures/current
+exec --no-startup-id ~/.fehbg
 
 #focus_follows_mouse no
-
-set $black #2d2d2d
-set $darkGrey #4C433E
-set $red #BD6B6B
-set $darkRed #955252
-set $green #A1B67B
-set $darkGreen #7A8A5d
-set $yellow #FFCC66
-set $darkYellow #C49D4E
-set $blue #60B1B7
-set $darkBlue #61878B
-set $magenta #A77899
-set $darkMagenta #7C5971
-set $cyan #7CB6A3
-set $darkCyan #679787
-set $white #fff4e8
-set $lightGrey #f0f0f0
-
-set $background #3F4040
-set $foreground $white
-
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -218,27 +196,25 @@ bar {
 
 	separator_symbol "|"
 
-	height 25
+	#height 25
 
 	colors{
-		separator $darkRed
-		background $background
-		statusline $white 
+		separator #285577
+		background #000000
+		statusline #ffffff 
 
-		focused_workspace $darkGreen $darkGreen $white
-		active_workspace $darkRed $darkRed $white
-		inactive_workspace $background $background $white
-		urgent_workspace $darkMagenta $darkMagenta $white
+		focused_workspace #285577 #285577 #ffffff
+		active_workspace #555555 #555555 #ffffff
+		inactive_workspace #000000 #000000 #ffffff
+		urgent_workspace #CD0000 #CD0000 #ffffff
 	}
 }
 
 
 
 # class                  border      backgr.     text         indicator
- client.focused          $darkGreen  $darkGreen  $foreground  $darkGreen
-# client.focused_inactive $darkRed    $darkRed    $foreground  $darkRed
- client.focused_inactive $background $background $foreground $background
- client.unfocused        $background $background $foreground  $background
- client.urgent      	 $darkYellow $darkYellow $foreground  $darkYellow
-#client.placeholder      #000000 #0c0c0c #ffffff #000000
+ client.focused          #285577  #285577 #ffffff #285577
+ client.focused_inactive #555555 #555555 #ffffff #555555
+ client.unfocused        #555555 #555555 #ffffff #555555
+ client.urgent      	 #CD0000 #CD0000 #ffffff  #CD0000
 

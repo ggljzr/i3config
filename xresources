@@ -9,62 +9,56 @@ URxvt*iconFile:            /usr/share/icons/Numix-Circle/scalable/apps/terminal.
 !URxvt*iconFile: /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png
 !URxvt*iconFile: /home/ggljzr/Documents/myConfig/icons/flattr-icons/apps/64/bash.svg
 
-!URxvt*font: xft:monospace:size=9
-!URxvt.font: xft:envypn-15:pixelsize-15
-URxvt*font: xft:terminus:size=10
-
+URxvt*font: xft:Terminus:size=10
 
 xterm*scrollBar: false
 
-
-URxvt.colorUL: #4682B4
-
 ! rofi config
-rofi.font: mono 9
+rofi.font: Terminus 10
 
-rofi.hlfg: #fff4e8
-rofi.hlbg: #955252
+rofi.hlfg: ##fore##
+rofi.hlbg: ##color2##
 
-rofi.fg-active: #60B1B7
-rofi.bg-active: #f0f0f0
+rofi.fg-active: ##color12##
+rofi.bg-active: ##bckg##
 
-rofi.hlfg-active: #fff4e8
-rofi.hlbg-active: #61878B
+rofi.hlfg-active: ##fore##
+rofi.hlbg-active: ##color4##
 
-rofi.fg-urgent: #A77899
-rofi.bg-urgent: #f0f0f0
+rofi.fg-urgent: ##color9##
+rofi.bg-urgent: ##bckg##
 
-rofi.hlfg-urgent: #fff4e8
-rofi.hlbg-urgent: #7C5971
+rofi.hlfg-urgent: ##fore##
+rofi.hlbg-urgent: ##color1##
 
 
 
 ! terminal colors ------------------------------------------------------------
 
 ! tangoesque scheme
-*background: #f0f0f0
-*foreground: #474848
+*background: #000000
+*foreground: #ffffff
 ! Black (not tango) + DarkGrey
-*color0:  #474848
-*color8:  #999999
+*color0:  #000000
+*color8:  #555555
 ! DarkRed + Red
-*color1: #955252 
-*color9: #BD6B6B 
+*color1: #CD0000
+*color9: #FF0000
 ! DarkGreen + Green
-*color2:  #73A583
-*color10: #89B396
+*color2:  #00CD00
+*color10: #00FF00
 ! DarkYellow + Yellow
-*color3:  #C49D4E
-*color11: #FFcc66
+*color3:  #CDCD00
+*color11: #FFFF00
 ! DarkBlue + Blue
-*color4:  #61878B
-*color12: #60B1B7
+*color4:  #4682B4
+*color12: #1E90FF
 ! DarkMagenta + Magenta
-*color5:  #7C5971
-*color13: #A77899
+*color5:  #CD00CD
+*color13: #FF00FF
 !DarkCyan + Cyan (both not tango)
-*color6:  #679787
-*color14: #7CB6A3
+*color6:  #00CDCD
+*color14: #00FFFF
 ! LightGrey + White
-*color7:  #D7D5D6
-*color15: #FFF4E8
+*color7:  #999999
+*color15: #ffffff

@@ -64,7 +64,7 @@ else:
         temp = str(jsonData['main']['temp'])
         hum = str(jsonData['main']['humidity'])
     except KeyError, e:
-        sderr.write("Openweather key error")
+        stderr.write("Openweather key error")
         stderr.write(str(e) + '\n')
         stderr.write("Data:\n")
         stderr.write(jsonData)
