@@ -12,6 +12,12 @@ These programs are called either by i3 (see `config`) or i3blocks (see `i3blocks
 * [nm-applet](https://wiki.archlinux.org/index.php/NetworkManager#nm-applet) -- for network connections
 * [feh](https://feh.finalrewind.org/) -- for [setting background](https://wiki.archlinux.org/index.php/feh)
 
+## Recommended software
+
+* urxvt-256color for terminal
+* [fish](http://fishshell.com/)
+* or [zsh](http://www.zsh.org/)
+
 ## Paths
 
 * config >> `~/.i3/config`
