@@ -17,6 +17,7 @@ These programs are called either by i3 (see `config`) or i3blocks (see `i3blocks
 * urxvt-256color for terminal
 * [fish](http://fishshell.com/) -- configurable via web interface
 * or [zsh](http://www.zsh.org/) -- use zshrc
+* lxappearance for setting themes and fonts in i3
 
 ## Paths
 
