@@ -15,8 +15,8 @@ These programs are called either by i3 (see `config`) or i3blocks (see `i3blocks
 ## Recommended software
 
 * urxvt-256color for terminal
-* [fish](http://fishshell.com/)
-* or [zsh](http://www.zsh.org/)
+* [fish](http://fishshell.com/) -- configurable via web interface
+* or [zsh](http://www.zsh.org/) -- use zshrc
 
 ## Paths
 
